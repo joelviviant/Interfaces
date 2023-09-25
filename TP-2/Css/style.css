@@ -1,0 +1,119 @@
+body{
+    background-color: white;
+}
+
+nav {
+  background-color: black; 
+  color: #ADFF45;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 9px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 15px;
+  font-size: 60px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column; 
+  font-size: 15px;
+}
+
+.logo-text div {
+  line-height: 1.3; 
+}
+
+.search input {
+  border: none;
+  padding: 5px; 
+  background-color: #ADFF45;
+  color: black;
+  width: 300px;
+}
+
+.links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.links li {
+  margin-right: 20px; /* Espacio entre los enlaces */
+}
+
+.links a {
+  text-decoration: none;
+  color: white; 
+  font-weight: bold;
+}
+.links select{
+  background-color: black;
+  border: 0px;
+  color: white;
+}
+
+.links a:hover {
+  color: #ADFF45; /* Estilo de resaltado al pasar el mouse sobre los enlaces */
+}
+
+.buy-button{
+  background-color: #ADFF45;
+  border-radius: 7px;
+  border: none;
+}
+
+.menu-icon {
+  cursor: pointer;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  display: none;
+}
+
+.menu li {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.menu a:hover {
+  background-color: #444;
+}
+
+#menu-checkbox:checked + .menu-icon + .menu {
+  display: block;
+}
+
+.menu-checkbox {
+  display: none;
+}
+
+
+
