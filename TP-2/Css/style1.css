@@ -97,6 +97,9 @@ body{
   .buy-button:hover {
   background-color: #FF9900; 
   }
+  .offcanvas{
+	background-color: black!important;
+  }
   
   .menu-icon {
   cursor: pointer;
