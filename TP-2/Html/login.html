@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zone Games</title>
@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link REL=StyleSheet HREF="../Css/style1.css" TYPE="text/css" MEDIA=screen> 
+    <link REL=StyleSheet HREF="../Css/style.css" TYPE="text/css" MEDIA=screen> 
     <link href="https://fonts.googleapis.com/css?family=Poller+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -34,16 +34,6 @@
     <ul class="links">
         <li><a href="#">Lanzamientos</a></li>
         <li><a href="#">Ofertas</a></li>
-        <li>
-          <select name="categorias" class="categorias">
-            <option disabled selected>Categorías</option>
-            <option>Para ti</option>
-            <option>Accion</option>
-            <option>Carreras</option>
-            <option>Estrategia</option>
-            <option>Puzzle</option>
-          </select>
-        </li>
     </ul>
     <button class="buy-button">Comprar Juegos</button>
   <sidebar>
@@ -64,6 +54,16 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Mis Juegos</a>
+          </li>
+          <li>
+            <select name="categorias" class="categorias">
+              <option disabled selected>Categorías ▽</option>
+              <option>Para ti</option>
+              <option>Accion</option>
+              <option>Carreras</option>
+              <option>Estrategia</option>
+              <option>Puzzle</option>
+            </select>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Carrito</a>
@@ -89,7 +89,85 @@
     </div>
   </sidebar>
 </nav>
-    <h1>BIENVENIDO A ZONE GAMES</h1>
+  <main>
+    <h1 class="titulo">Bienvenidos a Zone Games</h1>
+    <div class="container">      
+      <form>
+        <h4>Iniciar sesión</h4>
+          <div class="form-group">
+              <label for="nombre">Email:</label>
+              <input type="email" id="email" value="jennywil@gmail.com" name="email" >
+          </div>
+          <div class="form-group">
+              <label for="apellido">Contraseña:</label>
+              <input type="password" id="Contraseña" value="jennywil1234" name="Contraseña">
+          </div>
+          <div class="Ingresar">
+            <a href="home.html" class="btn-ingresar">Ingresar</a>
+          </div>
+      </form>
+      <div class="social-login">
+        <button class="google-login">
+          <img src="../Images/google.png" alt="Google Icon">
+          Ingresar con Google
+      </button>
+      <button class="facebook-login">
+          <img src="../Images/facebook.png" alt="Facebook Icon">
+          Ingresar con Facebook
+      </button>
+      </div>
+  </div>
+  </main>  
+  <footer>
+    <div>
+      <h2>Acerca De Zona Games:</h2>
+      <div class="footer-description">
+        <p>Zona Games - Tu Destino para Juegos en Línea<br>
+        Bienvenido a Zona Games, tu oasis de entretenimiento digital. En Zona Games, estamos comprometidos en brindarte una experiencia completa de juegos en línea, tanto si buscas
+        emocionantes juegos gratuitos como si estás dispuesto a descubrir títulos premium.</p>
+    
+        <p>Nuestro extenso catálogo abarca una amplia variedad de géneros y estilos de juegos, desde aventuras épicas hasta emocionantes desafíos multijugador.
+       Ya seas un jugador casual que busca pasar un rato agradable o un jugador apasionado en busca de competición, encontrarás algo para satisfacer tu sed de diversión en Zona Games.</p>
+      </div>
+      <div class="footer-links">
+        <div class="contact-links">
+          <h3>Contacto:</h3>
+          <ul>
+            <li>
+              <p class="contact">Contacto@zonagames.com</p>
+            </li>
+            <li>
+              <p class="contact-number">11-0303456</p>
+            </li>
+          </ul>          
+        </div>
+        <div class="links-utiles">
+          <h4>Enlaces Útiles:</h4>
+            <ul>
+              <li>Politica de privacidad</li>
+              <li>Trabaja con nosotros</li>
+            </ul>
+        </div>
+        <div class="links-redes">
+          <h5>Nuestras Redes:</h5>
+          <img src="../Images/facebook.png" alt="facebook">
+          <img src="../Images/twitter.png" alt="twitter">
+          <img src="../Images/instagram.png" alt="instagram">
+          <img src="../Images/discord.png" alt="discord">
+        </div>  
+      </div>
+      <div class="footer-logo">
+        <img src="../Images/logo.png" alt="facebook">
+        <img src="../Images/zone-games.png" alt="twitter">
+      </div>
+      <div class="footer-terms">
+        <img src="../Images/qr.png" alt="qr">
+        <h6>Nuestros Terminos De Uso</h6>
+    </div>
+      <div class="footer-below">
+        <p class="txt-below">El uso de este sitio significa la aceptación de términos de uso - Copyright Zone games © 2023 All right reserved</p>
+      </div>
+  </div>
+  </footer>
 </body>
 </html>
-
