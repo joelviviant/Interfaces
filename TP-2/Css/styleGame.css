@@ -1,0 +1,566 @@
+/*ESTILOS PARA EL NAVBAR*/
+nav{
+  background-color: black; 
+  color: #ADFF45;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 9px;
+  }
+  
+  nav > * {
+    margin-right: 20px; 
+  }
+  
+  nav > *:last-child{
+    margin-right: 0;
+  }
+  
+  .logo a {
+  text-decoration: none; 
+  color: inherit; 
+  }
+  
+  .logo{
+  display: flex;
+  align-items: center;
+  }
+  
+  .logo img{
+  width: 50px;
+  height: 50px;
+  }
+  
+  .logo-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  }
+  
+  .logo-text div{
+  line-height: 1;
+  }
+  
+  .search input{
+  border: none;
+  padding: 5px; 
+  background-color: #ADFF45;
+  color: black;
+  width: 250px;
+  }
+  
+  .links{
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  }
+  
+  .links li{
+  margin-right: 30px; 
+  }
+  
+  .links a{
+  text-decoration: none;
+  color: white; 
+  font-weight: bold;
+  }
+  .links select{
+  background-color: black;
+  border: 0px;
+  color: white;
+  }
+  
+  .links select:hover{
+  color: #ADFF45;
+  }
+  
+  .links a:hover {
+  color: #ADFF45;
+  }
+  .buy-button {
+  background-color: #ADFF45; 
+  color: black;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s; 
+  }
+  
+  .buy-button:hover {
+  background-color: #FF9900; 
+  }
+  
+  .menu-icon {
+    margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  margin-top: 10px;
+  transition: color 0.3s;
+  }
+  
+  .menu-icon:hover {
+  color: #FF9900;
+  }
+  
+  .menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  display: none;
+  }
+  
+  .menu li {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  }
+  
+  .menu a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  }
+  
+  .menu a:hover {
+  background-color: #444;
+  }
+  .menu-icon :hover{
+  color: #FF9900;
+  }
+  
+  #menu-checkbox:checked + .menu-icon + .menu {
+    display: block;
+  }
+  
+  .menu-checkbox {
+  display: none;
+  }
+  
+  #user{
+    width: 20px;
+    height: 20px;
+  }
+  
+  .categorias {
+    margin-left: -6px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none; 
+    background-color: black; 
+    color: white; 
+    padding: 5px; 
+  }
+  
+  .categorias option {
+    background-color: black; 
+    color: white; 
+  }
+  
+  .offcanvas{
+    background-color: black!important;
+  }
+  
+  
+  /*ESTILOS PARA EL BODY*/
+  body {
+    background-color: black;
+    font-family:Poppins;
+    
+  }
+  
+  .titulo {
+    margin-top: 30px;
+    font-size: 44px; 
+    font-weight: bold; 
+    text-align: center; 
+    color: #FF4593;
+  }
+  
+  main{
+    margin-bottom: 100px;
+  }
+  
+  /*ESTILOS PARA EL MAIN DEL GAME*/
+
+  
+/*ruta*/
+.ruta {
+  color: #ADFF45;
+  font-size: 16px;
+  padding: 1em;
+}
+.ruta a{
+  color: #ADFF45;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.ruta span {
+  color: #FF4593;
+}
+
+/*container del juego*/
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 1248px;
+  margin: auto;
+  gap: 1em;
+}
+
+.titulo-juego {
+  color: #FF4593;
+  font-size: 50px;
+}
+
+.descripcion-juego {
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+/*compartir*/
+
+.compartir {
+  display: flex;
+  gap: .5em;
+}
+
+.compartir .compartir-iconos {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.compartir-pop {
+  width: 521px;
+  height: 421px;
+  background: #000000;
+  position: fixed;
+  top: 30%;
+  left: 35%;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3em;
+  display: none;
+}
+
+  .compartir-pop.abrir {
+      display: flex;
+  }
+
+.btn-cerrar-compartir {
+  width: 26px;
+  height: 26px;
+  color: #FF4593;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  cursor: pointer;
+}
+
+.compartir-pop h3 {
+  color: #FFFFFF;
+  font-size: 37px;
+}
+
+.input-link {
+  width: 368px;
+  height: 50px;
+  background: #343434;
+  border-radius: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-link p {
+  width: 336px;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.compartir-pop button {
+  background: #ADFF45;
+  width: 140px;
+  height: 40px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+  border: 0;
+}
+
+.cerrar-compartir-pop {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+  z-index: 1;
+  position: fixed;
+  display: none;
+}
+
+.cerrar-compartir-pop.mostrar {
+  display: block;
+}
+/**/
+
+
+.juego {
+  width: 1242px;
+  height: 800px;
+  border: 5px solid #ADFF45;
+}
+
+.juego img {
+  width: 100%;
+  height: 100%;
+}
+
+/*Imagenes del juego*/
+.juego-fotos {
+  width: 1205px;
+  height: 250px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carrousel-imagenes {
+  display: flex;
+  gap: 35px;
+  transition: transform .3s ease-out;
+}
+
+.carrousel-imagenes img {
+  min-width: 275px;
+  height: 250px;
+  border: 1px solid white;
+}
+
+.btn-slideimg-izq {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  position: absolute;
+  left: -1em;
+  top: 30%;
+  color: #FF4593;
+  transform: rotate(180deg);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.btn-slideimg-der {
+  width: 100px;
+  height: 100px;
+  color: #FF4593;
+  border-radius: 100px;
+  position: absolute;
+  right: -1em;
+  top: 30%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/*Instrucciones*/
+.instrucciones {
+  width: 1100px;
+  height: 476px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.subtitulo {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.subtitulo h2 {
+  color: #FF4593;
+  font-size: 37px;
+}
+
+.subtitulo svg {
+  color: #ADFF45;
+  width: 40px;
+  height: 40px;
+}
+
+.instrucciones p {
+  color: #FFFFFF;
+  font-size: 20px;
+  margin-left: 3em;
+}
+
+.instrucciones .controles {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Comentarios*/
+
+.seccion-comentarios {
+  width: 1285px;
+  height: 1267px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.comentario {
+  width: 1225px;
+  height: 220px;
+  margin-left: 3em;
+}
+
+.comentario .comentario-top {
+  background: #0E0D0D;
+  width: 100%;
+  height: 110px;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  padding: 1em;
+}
+
+.comentario-top-left {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+}
+
+.comentario-top-right {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+.comentario-top-right .estrellas {
+  width: 25px;
+  height: 25px;
+}
+
+.comentario .comentario-bottom {
+  background: #343434;
+  width: 100%;
+  height: 110px;
+  padding: 1em;
+  position: relative;
+}
+
+.comentario-bottom p {
+  color: #D0FF94;
+  font-size: 16px;
+}
+
+.comentario-bottom button {
+  background: #ADFF45;
+  width: 140px;
+  height: 40px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+  border: 0;
+  position: absolute;
+  right: .5em;
+  bottom: .5em;
+}
+  
+  /*ESTILOS PARA EL FOOTER*/
+  
+  footer{
+    background-color: #93D63F;
+    position: sticky;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-terms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -50px;
+  }
+  
+  .footer-terms img {
+    margin-bottom: 10px;
+  }
+  .footer-terms h6 {
+    margin-top: -10px; 
+    margin-left: 0px;
+  }
+  
+  h2{
+    margin-top: 2%;
+    margin-left: 3%;
+  }
+  .footer-description{
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 40%;
+  }
+  .footer-links {
+    margin-top: 3%;
+    margin-left: 3%;
+    display: flex;
+    
+  }
+  
+  .contact-links,
+  .links-utiles,
+  .links-redes {
+      margin-right: 50px; 
+  }
+  
+  .contact-links li{
+    margin-bottom: 3px; 
+  }
+  
+  h2,h3,h4,h5,h6{
+    color: #B13268;
+  }
+  
+  h2{
+    font-weight: bold;
+  }
+  h6{
+    margin-top: 3px;
+    margin-left: 35px;
+  }
+  
+  .footer-logo{
+    position: absolute;
+   top: 3%;
+   right: 6%;
+  }
+  .footer-terms{
+    position: absolute;
+   top: 35%;
+   right: 3%;
+  }
+  .txt-below{
+   text-align: center;
+   margin-bottom: auto;
+  }
+  
+  .footer-below {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FF4593 ;
+  }
+  
