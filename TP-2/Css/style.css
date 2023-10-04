@@ -151,26 +151,26 @@ display: none;
 }
 
 .categorias {
-  /* Oculta el estilo predeterminado del select */
   margin-left: -6px;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  border: none; /* Elimina el borde predeterminado */
-  background-color: black; /* Fondo negro */
-  color: white; /* Texto blanco */
-  padding: 5px; /* Añade un poco de espacio alrededor del texto */
+  border: none; 
+  background-color: black; 
+  color: white; 
+  padding: 5px; 
 }
 
 .categorias option {
-  /* Estilos para las opciones */
-  background-color: black; /* Fondo negro */
-  color: white; /* Texto blanco */
+  background-color: black; 
+  color: white; 
 }
 
 .offcanvas{
   background-color: black!important;
 }
+
+
 /*ESTILOS PARA EL BODY*/
 
 body {
@@ -181,40 +181,96 @@ body {
 
 .titulo {
   margin-top: 30px;
-  font-size: 44px; /* Tamaño de fuente del título */
-  font-weight: bold; /* Negrita del texto */
-  text-align: center; /* Centrar el texto horizontalmente */
+  font-size: 44px; 
+  font-weight: bold; 
+  text-align: center; 
   color: #FF4593;
 }
 
-/* Estilos para el footer */
-.fat-footer {
-  background-color: #333; /* Color de fondo del fat footer */
-  color: white; /* Color del texto en el footer */
-  padding: 30px 0; /* Espaciado interno del footer */
+/*FOOTER*/
+
+footer{
+  background-color: #93D63F;
+  position: sticky;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.fat-footer h3 {
-  font-size: 18px; /* Tamaño de fuente para los títulos del footer */
+.footer-terms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: -50px;
 }
 
-.fat-footer ul {
-  list-style: none;
-  padding: 0;
+.footer-terms img {
+  margin-bottom: 10px;
+}
+.footer-terms h6 {
+  margin-top: -10px; 
+  margin-left: 0px;
 }
 
-.fat-footer ul li {
-  margin-bottom: 10px; /* Espaciado entre elementos de la lista del footer */
+h2{
+  margin-top: 2%;
+  margin-left: 3%;
+}
+.footer-description{
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 40%;
+}
+.footer-links {
+  margin-top: 3%;
+  margin-left: 3%;
+  display: flex;
+  
 }
 
-.fat-footer a {
-  color: white; /* Color de enlace en el footer */
-  text-decoration: none;
+.contact-links,
+.links-utiles,
+.links-redes {
+    margin-right: 50px; 
 }
 
-/* Estilos para el contenido dentro de las columnas del footer */
-.col-md-4 {
-  padding: 0 15px; /* Espaciado interno de las columnas del footer */
+.contact-links li{
+  margin-bottom: 3px; 
+}
+
+h2,h3,h4,h5,h6{
+  color: #B13268;
+}
+
+h2{
+  font-weight: bold;
+}
+h6{
+  margin-top: 3px;
+  margin-left: 35px;
+}
+
+.footer-logo{
+  position: absolute;
+ top: 3%;
+ right: 6%;
+}
+.footer-terms{
+  position: absolute;
+ top: 35%;
+ right: 3%;
+}
+.txt-below{
+ text-align: center;
+ margin-bottom: auto;
+}
+
+.footer-below {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #FF4593 ;
 }
 
 
@@ -224,8 +280,8 @@ main{
 
 /* Estilos para el formulario */
 form {
-  max-width: 400px; /* Ancho máximo del formulario */
-  margin: 0 auto; /* Centrar el formulario en la página */
+  max-width: 400px; 
+  margin: 0 auto; 
   background-color: #ADFF45;
   margin-top: 50px;
   padding: 20px;
@@ -242,10 +298,9 @@ label {
   margin-bottom: 5px;
 }
 
-/* Establece un ancho máximo para los campos de entrada */
 .form-group input {
   width: 100%;
-  max-width: 350px; /* Ancho máximo de los campos de entrada */
+  max-width: 350px; 
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -280,7 +335,7 @@ a {
   color: #FF4593;
 }
 
-/* Estilos para los botones de inicio de sesión con Google y Facebook */
+
 .social-login {
   text-align: center;
   margin-top: 20px;

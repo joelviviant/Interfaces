@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zone Games</title>
@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link REL=StyleSheet HREF="../Css/style.css" TYPE="text/css" MEDIA=screen> 
+    <link REL=StyleSheet HREF="../Css/style1.css" TYPE="text/css" MEDIA=screen> 
     <link href="https://fonts.googleapis.com/css?family=Poller+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -34,6 +34,16 @@
     <ul class="links">
         <li><a href="#">Lanzamientos</a></li>
         <li><a href="#">Ofertas</a></li>
+        <li>
+          <select name="categorias" class="categorias">
+            <option disabled selected>Categorías</option>
+            <option>Para ti</option>
+            <option>Accion</option>
+            <option>Carreras</option>
+            <option>Estrategia</option>
+            <option>Puzzle</option>
+          </select>
+        </li>
     </ul>
     <button class="buy-button">Comprar Juegos</button>
   <sidebar>
@@ -54,16 +64,6 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Mis Juegos</a>
-          </li>
-          <li>
-            <select name="categorias" class="categorias">
-              <option disabled selected>Categorías ▽</option>
-              <option>Para ti</option>
-              <option>Accion</option>
-              <option>Carreras</option>
-              <option>Estrategia</option>
-              <option>Puzzle</option>
-            </select>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Carrito</a>
@@ -89,90 +89,7 @@
     </div>
   </sidebar>
 </nav>
-  <main>
-    <h1 class="titulo">Bienvenidos a Zone Games</h1>
-    <div class="container">
-      
-      <form action="procesar_registro.php" method="post">
-        <h4>Registro</h4>
-          <div class="form-group">
-              <label for="nombre">* Nombre:</label>
-              <input type="text" id="nombre" placeholder="Nombre" name="nombre" required>
-          </div>
-          <div class="form-group">
-              <label for="apellido">* Apellido:</label>
-              <input type="text" id="apellido" placeholder="Apellido" name="apellido" required>
-          </div>
-          <div class="form-group">
-              <label for="edad">* Edad:</label>
-              <input type="number" id="edad" placeholder="Edad" name="edad" required>
-          </div>
-          <h4>Sobre tu cuenta:</h4>
-          <div class="form-group">
-              <label for="email">* Email:</label>
-              <input type="email" id="email" placeholder="Email" name="email" required>
-          </div>
-          <div class="form-group">
-              <label for="nickname">Nickname:</label>
-              <input type="text" id="nickname" placeholder="Nickname" name="nickname" required>
-          </div>
-          <div class="form-group">
-              <label for="contrasena">* Contraseña:</label>
-              <input type="password" id="contrasena" placeholder="Contraseña" name="contrasena" required>
-          </div>
-          <div class="form-group">
-              <label for="repetir-contrasena">* Repetir Contraseña:</label>
-              <input type="password" id="repetir-contrasena" placeholder="Repetir contraseña" name="repetir-contrasena" required>
-          </div>
-          <div class="form-group img-captcha">
-            <img id="captcha" src="../Images/captcha.png" alt="Captcha">
-        </div>
-          <div class="form-group">
-              <button type="submit">Registrarme</button>
-          </div>
-      </form>
-      <p>¿Ya tienes una cuenta? <a href="iniciar_sesion.html">Iniciar sesión</a></p>
-      <div class="social-login">
-        <button class="google-login">
-          <img src="../Images/google.png" alt="Google Icon">
-          Ingresar con Google
-      </button>
-      
-      <button class="facebook-login">
-          <img src="../Images/facebook.png" alt="Facebook Icon">
-          Ingresar con Facebook
-      </button>
-      </div>
-  </div>
-  </main>  
-  <footer class="fat-footer">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-4">
-                  <h3>Enlaces útiles</h3>
-                  <ul>
-                      <li><a href="#">Inicio</a></li>
-                      <li><a href="#">Acerca de nosotros</a></li>
-                      <li><a href="#">Servicios</a></li>
-                      <li><a href="#">Contacto</a></li>
-                  </ul>
-              </div>
-              <div class="col-md-4">
-                  <h3>Recursos</h3>
-                  <ul>
-                      <li><a href="#">Blog</a></li>
-                      <li><a href="#">Preguntas frecuentes</a></li>
-                      <li><a href="#">Política de privacidad</a></li>
-                  </ul>
-              </div>
-              <div class="col-md-4">
-                  <h3>Contacto</h3>
-                  <p>Dirección: 123 Calle Principal<br> Ciudad, País</p>
-                  <p>Email: info@example.com<br> Teléfono: (123) 456-7890</p>
-              </div>
-          </div>
-      </div>
-  </footer>
-  
+    <h1>BIENVENIDO A ZONE GAMES</h1>
 </body>
 </html>
+
