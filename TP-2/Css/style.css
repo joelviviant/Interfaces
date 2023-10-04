@@ -215,8 +215,22 @@ form {
   font-size: 16px;
   text-align: center;
 }
+.btn-cancelar {
+  width: 200px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FF4593;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+}
 
 .btn-ingresar:hover {
+  background-color: #FFA7CC;
+}
+.btn-cancelar:hover {
   background-color: #FFA7CC;
 }
 .form-group {
@@ -314,6 +328,15 @@ button.facebook-login:hover {
 .form-group.img-captcha {
   display: flex;
   justify-content: center;
+}
+
+.btn-volver {
+  top: 10px;
+  left: 10px;
+  text-decoration: none;
+  color: #FF4593;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 /*FOOTER*/
