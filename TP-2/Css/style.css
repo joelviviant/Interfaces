@@ -171,7 +171,6 @@ display: none;
 
 
 /*ESTILOS PARA EL BODY*/
-
 body {
   background-color: black;
   font-family:Poppins;
@@ -190,7 +189,7 @@ main{
   margin-bottom: 100px;
 }
 
-/* Estilos para el formulario */
+/*ESTILOS PARA EL FORMULARIO*/
 form {
   max-width: 500px; 
   margin: 0 auto; 
@@ -339,7 +338,7 @@ button.facebook-login:hover {
   border-radius: 5px;
 }
 
-/*FOOTER*/
+/*ESTILOS PARA EL FOOTER*/
 
 footer{
   background-color: #93D63F;
