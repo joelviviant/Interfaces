@@ -280,17 +280,21 @@ main{
 
 /* Estilos para el formulario */
 form {
-  max-width: 400px; 
+  max-width: 600px; 
   margin: 0 auto; 
   background-color: #ADFF45;
   margin-top: 50px;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
 }
 
 .form-group {
   margin-bottom: 15px;
+  width: 100%; 
 }
 
 label {
@@ -300,7 +304,6 @@ label {
 
 .form-group input {
   width: 100%;
-  max-width: 350px; 
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -324,7 +327,7 @@ button[type="submit"]:hover {
   background-color: #FFA7CC;
 }
 
-.container p{
+.container p {
   text-align: center;
   margin-top: 20px;
   color: white;
@@ -334,7 +337,6 @@ a {
   text-decoration: none;
   color: #FF4593;
 }
-
 
 .social-login {
   text-align: center;
@@ -355,12 +357,12 @@ button.facebook-login {
   margin: 0 5px;
 }
 
-.google-login img{
+.google-login img {
   width: 20px;
   height: 20px;
 }
 
-.facebook-login img{
+.facebook-login img {
   width: 20px;
   height: 20px;
 }
@@ -374,7 +376,7 @@ button.facebook-login:hover {
   background-color: #0056b3;
 }
 
-#captcha{
+#captcha {
   width: 200px;
   height: 50px;
 }
