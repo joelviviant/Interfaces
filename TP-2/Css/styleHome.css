@@ -1,16 +1,209 @@
-.container-principal {
+/*ESTILOS PARA EL NAVBAR*/
+nav{
+  background-color: black; 
+  color: #ADFF45;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 9px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  }
+  
+  nav > * {
+    margin-right: 20px; 
+  }
+  
+  nav > *:last-child{
+    margin-right: 0;
+  }
+  
+  .logo a {
+  text-decoration: none; 
+  color: inherit; 
+  }
+  
+  .logo{
+  display: flex;
+  align-items: center;
+  }
+  
+  .logo img{
+  width: 50px;
+  height: 50px;
+  }
+  
+  .logo-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  }
+  
+  .logo-text div{
+  line-height: 1;
+  }
+  
+  .search input{
+  border: none;
+  padding: 5px; 
+  background-color: #ADFF45;
+  color: black;
+  width: 250px;
+  }
+  
+  .links{
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  }
+  
+  .links li{
+  margin-right: 30px; 
+  }
+  
+  .links a{
+  text-decoration: none;
+  color: white; 
+  font-weight: bold;
+  }
+  .links select{
+  background-color: black;
+  border: 0px;
+  color: white;
+  }
+  
+  .links select:hover{
+  color: #ADFF45;
+  }
+  
+  .links a:hover {
+  color: #ADFF45;
+  }
+  .buy-button {
+  background-color: #ADFF45; 
+  color: black;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s; 
+  }
+  
+  .buy-button:hover {
+  background-color: #FF9900; 
+  }
+  
+  .menu-icon {
+    margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  margin-top: 10px;
+  transition: color 0.3s;
+  }
+  
+  .menu-icon:hover {
+  color: #FF9900;
+  }
+  
+  .menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  display: none;
+  }
+  
+  .menu li {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  }
+  
+  .menu a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  }
+  
+  .menu a:hover {
+  background-color: #444;
+  }
+  .menu-icon :hover{
+  color: #FF9900;
+  }
+  
+  #menu-checkbox:checked + .menu-icon + .menu {
+    display: block;
+  }
+  
+  .menu-checkbox {
+  display: none;
+  }
+  
+  #user{
+    width: 20px;
+    height: 20px;
+  }
+  
+  .categorias {
+    margin-left: -6px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none; 
+    background-color: black; 
+    color: white; 
+    padding: 5px; 
+  }
+  
+  .categorias option {
+    background-color: black; 
+    color: white; 
+  }
+  
+  .offcanvas{
+    background-color: black!important;
+  }
+  
+  
+  /*ESTILOS PARA EL BODY*/
+  body {
+    background-color: black;
+    font-family:Poppins;
+    
+  }
+  
+  .titulo {
+    margin-top: 30px;
+    font-size: 44px; 
+    font-weight: bold; 
+    text-align: center; 
+    color: #FF4593;
+  }
+  
+  main{
+    margin-bottom: 100px;
+  }
+.contenedor-principal {
     display: flex;
     flex-direction: column;
     align-items: center;
     
 }
-.container-secundario {
+.contenedor-secundario {
     display: flex;
     flex-direction: column;
     align-items: center;
    
 }
-.container {
+.contenedor {
     display: flex;
     align-items: center;
    
@@ -33,7 +226,7 @@
 }
 
 /*Carrousel*/
-.container-carrousel {
+.contenedor-carrousel {
     position: relative;
     overflow: hidden;
     width: 1540px;
@@ -161,3 +354,127 @@
   .custom-block a:hover {
     color: #FF4593;
   }
+/*ESTILOS PARA EL FOOTER*/
+
+footer{
+  background-color: #93D63F;
+  position: sticky;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-terms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.footer-terms img {
+  margin-bottom: 10px;
+}
+.footer-terms h6 {
+  margin-top: -10px; 
+  margin-left: 0px;
+}
+
+h2{
+  margin-top: 2%;
+  margin-left: 3%;
+}
+.footer-description{
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 40%;
+}
+.footer-links {
+  margin-top: 3%;
+  margin-left: 3%;
+  display: flex;
+  
+}
+
+.contact-links,
+.links-utiles,
+.links-redes {
+    margin-right: 50px; 
+}
+
+.contact-links li{
+  margin-bottom: 3px; 
+}
+
+h2,h3,h4,h5,h6{
+  color: #B13268;
+}
+
+h2{
+  font-weight: bold;
+}
+h6{
+  margin-top: 3px;
+  margin-left: 35px;
+}
+
+.footer-logo{
+  position: absolute;
+ top: 3%;
+ right: 6%;
+}
+.footer-terms{
+  position: absolute;
+ top: 35%;
+ right: 3%;
+}
+.txt-below{
+ text-align: center;
+ margin-bottom: auto;
+}
+
+.footer-below {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #FF4593 ;
+}
+
+  /* Estilos para el preloader */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../Images/FONDO.jpg);
+  background-size: cover; /* La imagen se ajustará al tamaño de la ventana de visualización */
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader {
+  background-color: #FF9900;
+  border-top: 8px solid #ADFF45;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Estilos para ocultar el preloader después de 5 segundos */
+.hide {
+  display: none;
+ 
+}
