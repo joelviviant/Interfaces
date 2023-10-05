@@ -29,11 +29,20 @@ function slideDer(btnDer) {
 
 document.body.classList.add('no-scroll', 'preloader-active');
 
-setTimeout(function() {
-  document.querySelector('.preloader').classList.add('hide');
+const preloader = document.querySelector('.preloader');
+const percentageElement = document.querySelector('.percentage');
 
+let percentage = 0;
+const interval = setInterval(function() {
+  percentage += 1;
+  percentageElement.innerText = percentage + "%";
 
-  document.body.classList.remove('no-scroll', 'preloader-active');
-
-  document.querySelector('.contenido').style.display = 'block';
-}, 5000);
+  if (percentage === 100) {
+    clearInterval(interval);
+    setTimeout(function() {
+      preloader.classList.add('hide');
+      document.body.classList.remove('no-scroll', 'preloader-active');
+      document.querySelector('.contenido').style.display = 'block';
+    }, 2500); // Duración total del preloader y el porcentaje
+  }
+}, 25);

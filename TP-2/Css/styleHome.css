@@ -484,3 +484,11 @@ h6{
 .contenido {
   display: none;
 }
+.percentage {
+  margin-left: 25px;
+  color: #FF9900; /* Cambiar el color del porcentaje */
+  font-size: 24px; /* Cambiar el tamaño del porcentaje */
+  margin-top: 10px; /* Ajustar el margen superior del porcentaje */
+  text-align: center; /* Centrar el porcentaje */
+}
+
