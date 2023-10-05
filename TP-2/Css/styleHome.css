@@ -191,22 +191,18 @@ nav{
   main{
     margin-bottom: 100px;
   }
-.contenedor-principal {
+
+  .contenedor-principal {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    gap: 5em;
 }
-.contenedor-secundario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
-}
+
 .contenedor {
     display: flex;
     align-items: center;
-   
+    gap: 1em;
 }
 
 /*Botones*/
@@ -226,10 +222,10 @@ nav{
 }
 
 /*Carrousel*/
-.contenedor-carrousel {
+.container-carrousel {
     position: relative;
     overflow: hidden;
-    width: 1540px;
+    width: 1230px;
     height: 300px;
 }
 
@@ -240,6 +236,9 @@ nav{
     transition: transform .3s ease-out;
 }
 
+.card-title{
+  color: #ADFF45;
+}
 
 /*Cards*/
 .card {
@@ -247,9 +246,42 @@ nav{
     height: 300px;
     border-radius: 20px;
     position: relative;
+    cursor: pointer;
 }
 
-.card img {
+.card .card-nombre {
+    width: 100%;
+    height: 100px;
+    background: #281F3E;
+    position: absolute;
+    bottom: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+    /*Efectos hover a las card cuando se muestra el precio*/
+    .card:hover .card-nombre {
+        display: flex;
+    }
+
+    .card:hover .card-imagen {
+        opacity: .5;
+    }
+
+.card-nombre h3 {
+    color: #FF9900;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    padding: 1em;
+}
+
+.card .card-imagen {
     height: 100%;
     width: 100%;
     border-radius: 20px;
@@ -265,6 +297,7 @@ nav{
     color: #FF9900;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .card .icon-estado {
@@ -278,6 +311,7 @@ nav{
     border-radius: 100px;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .icon-estado .estado {
@@ -285,12 +319,24 @@ nav{
     height: 50px;
     color: #FF4593;
 }
-.card-title{
-    color: #ADFF45;
-    margin-top: 10%;
-    margin-bottom: 1%;
-    margin-left: 3%;
+
+/*Botones*/
+.btn-der {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    color: #FF4593;
 }
+
+.btn-izq {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    color: #FF4593;
+    transform: rotate(180deg);
+}
+
+
 /*novedades*/
 .custom-block {
     background-color: #302027;

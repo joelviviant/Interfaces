@@ -5,9 +5,9 @@ let seccionCarrousel = 0;
 
 function slideIzq(btnIzq) {
     if(seccionCarrousel != 0) {
-        seccionCarrousel += 5;
+        seccionCarrousel += 4;
     } else {
-        seccionCarrousel = -10;
+        seccionCarrousel = -8;
     }
     let slide = seccionCarrousel * cardWidth;
     let aux = btnIzq.nextElementSibling;
@@ -16,8 +16,8 @@ function slideIzq(btnIzq) {
 }
 
 function slideDer(btnDer) {
-    if(seccionCarrousel >= -5) {
-        seccionCarrousel -= 5;
+    if(seccionCarrousel >= -4) {
+        seccionCarrousel -= 4;
     } else {
         seccionCarrousel = 0;
     }
@@ -26,7 +26,6 @@ function slideDer(btnDer) {
     let carrousel = aux.firstElementChild;
     carrousel.style.transform = `translateX(${slide}px)`;
 }
-
 document.body.classList.add('no-scroll', 'preloader-active');
 
 const preloader = document.querySelector('.preloader');
