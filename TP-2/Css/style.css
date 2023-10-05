@@ -429,3 +429,25 @@ h6{
   right: 0;
   background-color: #FF4593 ;
 }
+.login-tick-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FF9900;
+  padding: 20px;
+  text-align: center;
+  display: none;
+  border-radius: 10px;
+}
+
+.login-tick {
+  font-size: 48px;
+  color: white;
+}
+
+.welcome-text {
+  color: white;
+  font-size: 24px;
+  margin-top: 10px;
+}
