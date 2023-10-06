@@ -77,21 +77,19 @@
       margin-right: 20px;
       border-radius: 10px;
       text-align: center;
+      align-items: center;
     }
     .custom-block a {
       font-size: 10px;
       width: 243px;
-      text-align: center;
       text-decoration: none;
       color: black;
       font-weight: bold;
       border-radius: 10px;
       padding: 5px;
       background-color: #ADFF45;
-      margin-left: 50px;
       margin-top: 10px;
       margin-bottom: 10px;
-  
     }
     .custom-block h1{
     color: #ADFF45;
@@ -115,7 +113,74 @@
       font-size: 15px;
       text-align: center;
     }
- 
+    /*Estilos sidebar mobile*/
+    .menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #333;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      display: none;
+      
+      }
+      
+      .menu li {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      }
+      
+      .menu a {
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: white;
+      }
+      
+      .menu a:hover {
+      background-color: #444;
+      }
+      .menu-icon :hover{
+      color: #FF9900;
+      }
+      
+      #menu-checkbox:checked + .menu-icon + .menu {
+        display: block;
+      }
+      
+      .menu-checkbox {
+      display: none;
+      }
+      
+      #user{
+        width: 20px;
+        height: 20px;
+      }
+      
+      .categorias {
+        margin-left: -6px;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border: none; 
+        background-color: black; 
+        color: white; 
+        padding: 5px; 
+      }
+      
+      .categorias option {
+        background-color: black; 
+        color: white; 
+      }
+      
+      .offcanvas{
+        background-color: black!important;
+      }
+      .offcanvas body{
+        justify-content: center!important;
+      }
       
  /* Estilos para el preloader */
  .preloader {
