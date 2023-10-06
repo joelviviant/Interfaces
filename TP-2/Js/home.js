@@ -1,6 +1,6 @@
 "use strict";
 
-let cardWidth = 310;
+let cardWidth = 260;
 let seccionCarrousel = 0;
 
 function slideIzq(btnIzq) {

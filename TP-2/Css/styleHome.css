@@ -232,8 +232,8 @@ nav{
 .container-carrousel {
     position: relative;
     overflow: hidden;
-    width: 1230px;
-    height: 300px;
+    width: 1030px;
+    height: 250px;
     margin-top: 3%;
 }
 
@@ -250,8 +250,8 @@ nav{
 
 /*Cards*/
 .card {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 20px;
     position: relative;
     cursor: pointer;
