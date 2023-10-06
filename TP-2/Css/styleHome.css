@@ -203,7 +203,6 @@ nav{
     display: flex;
     align-items: center;
     gap: 1em;
-    margin-top: 25px;
 }
 
 /*Botones*/
@@ -228,7 +227,6 @@ nav{
     overflow: hidden;
     width: 1230px;
     height: 300px;
-    margin-top: 3%;
 }
 
 .carrousel {
@@ -240,11 +238,6 @@ nav{
 
 .card-title{
   color: #ADFF45;
-  display: flex;
-  margin-top: 3%;
-  flex-direction: column;
-  margin-left:10%;
-  gap: 5em;
 }
 
 /*Cards*/
