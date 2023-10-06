@@ -205,7 +205,13 @@ nav{
     gap: 1em;
 }
 
-
+.card-title{
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-left:10%;
+  gap: 5em;
+}
 /*Botones*/
 .btn-der {
     height: 100px;
