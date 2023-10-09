@@ -391,7 +391,7 @@ h6 {
     position: relative;
     overflow: hidden;
     width: 530px;
-    height: 150px;
+    height: 250px;
     margin-top: 3%;
 }
 
@@ -454,16 +454,17 @@ h6 {
 }
 
 .card .card-precio {
-    display: flex;
-    position: absolute;
-    background: #281F3E;
-    width: 148px;
-    height: 47px;
-    border-top-left-radius: 20px;
-    color: #FF9900;
-    align-items: center;
-    z-index: 1;
-    border-top-right-radius: 20px;
+  display: flex;
+  position: absolute;
+  background: #281F3E;
+  width: 248px;
+  justify-content: center;
+  height: 47px;
+  border-top-left-radius: 20px;
+  color: #FF9900;
+  align-items: center;
+  z-index: 1;
+  border-top-right-radius: 20px;
 }
 
 .card .icon-estado {
@@ -495,8 +496,8 @@ h6 {
 }
 
 .btn-izq {
-    height: 100px;
-    width: 100px;
+    height: 40px;
+    width: 40px;
     cursor: pointer;
     color: #FF4593;
     transform: rotate(180deg);
