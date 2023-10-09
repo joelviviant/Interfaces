@@ -394,8 +394,8 @@ h6 {
 
 /*Cards*/
 .card {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 20px;
     position: relative;
     cursor: pointer;
@@ -443,7 +443,7 @@ h6 {
   display: flex;
   position: absolute;
   background: #281F3E;
-  width: 248px;
+  width: 198px;
   justify-content: center;
   height: 57px;
   border-top-left-radius: 20px;
