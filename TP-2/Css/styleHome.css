@@ -375,7 +375,7 @@ h6 {
 .container-carrousel {
     position: relative;
     overflow: hidden;
-    width: 530px;
+    width: 430px;
     height: 250px;
     margin-top: 3%;
 }
@@ -475,20 +475,11 @@ h6 {
 
 /*Botones*/
 .btn-der {
-    height: 60px;
-    width: 60px;
-    cursor: pointer;
-    color: #FF4593;
-    z-index: 1;
+    display: none;
 }
 
 .btn-izq {
-    height: 60px;
-    width: 60px;
-    cursor: pointer;
-    color: #FF4593;
-    transform: rotate(180deg);
-    z-index: 1;
+  display: none;
 }
 
 
