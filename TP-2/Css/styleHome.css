@@ -385,7 +385,7 @@ h6 {
     display: flex;
     gap: 10px;
     transition: transform .3s ease-out;
-    margin-left: 74px;
+    margin-left: 50px;
 }
 
 .card-title{
