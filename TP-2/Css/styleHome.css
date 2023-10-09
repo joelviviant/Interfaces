@@ -242,6 +242,113 @@
   margin-top: 10px; /* Ajustar el margen superior del porcentaje */
   text-align: center; /* Centrar el porcentaje */
 }
+footer {
+  background-color: #93D63F;
+  position: sticky;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra el contenido verticalmente */
+  align-items: center; /* Centra el contenido horizontalmente */
+  text-align: center;
+}
+.footer-terms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: -50px;
+}
+.footer-description {
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  font-size: small;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+}
+.footer-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente las imágenes dentro del contenedor */
+  align-items: center; /* Centra verticalmente las imágenes dentro del contenedor */
+  flex-direction: center; /* Alinea las imágenes verticalmente en una columna */
+}
+.footer-logo img {
+  max-width: 100%;  
+}
+.footer-terms img {
+  margin-top: 15%;
+  margin-bottom: 10px;
+  width: 40%;
+}
+
+.footer-terms h6 {
+  margin-top: -10px;
+}
+.footer-terms,
+.footer-logo {
+  margin-left: auto;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinea los contenedores de enlaces al centro horizontalmente */
+  margin-top: 10px;
+}
+
+.contact-links,
+.links-utiles,
+.links-redes {
+  list-style: none;
+  padding: 0;
+  margin-left: 0; 
+  text-align: center; 
+}
+.contact-links li,
+.links-utiles li,
+.links-redes li {
+  margin-bottom: 3px;
+  font-size: small;
+}
+.links-redes img {
+  width: 15%;
+}
+/* Estilo de los encabezados en el footer */
+h2, h3, h4, h5, h6 {
+  color: #B13268;
+}
+
+h2 {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+h6 {
+  margin-top: 3px;
+  margin-left: 0;
+  font-size: small;
+}
+/* Estilo del pie de página inferior */
+.txt-below {
+  text-align: center;
+  margin-bottom: auto;
+  margin-top: 5px;
+  font-size: x-small; 
+}
+
+.footer-below {
+  background-color: #FF4593;
+  padding: 5px;
+  text-align: center;
+  font-size: x-small; 
+}
+
+
 }
 
 @media screen and (min-width: 840px){
