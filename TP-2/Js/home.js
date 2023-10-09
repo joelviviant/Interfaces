@@ -45,3 +45,14 @@ const interval = setInterval(function() {
     }, 2500); // Duración total del preloader y el porcentaje
   }
 }, 25);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const mySwiper = new Swiper(".swiper-container", {
+    // Opciones de configuración aquí
+    loop: true, // Permite desplazarse de manera infinita
+    pagination: {
+      el: ".swiper-pagination", // Elemento de paginación
+    },
+  });
+});
+

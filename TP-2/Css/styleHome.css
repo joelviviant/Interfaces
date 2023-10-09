@@ -371,7 +371,9 @@ h6 {
   gap: 5em;
   color: #ADFF45;
 }
-
+.swiper-pagination{
+  display: none!important;
+}
 
 /*Carrousel*/
 .container-carrousel {
@@ -485,11 +487,27 @@ h6 {
   display: none;
 }
 
-
+.card-title-mobile{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-left:4%;
+  font-size: large;
+  gap: 5em;
+  color: #ADFF45;
+}
+.swiper-slide {
+ justify-content: center!important;
+ display: flex!important;
+ flex-direction: row!important;
+}
 
 }
 
 @media screen and (min-width: 840px){
+.carrousel-mobile{
+  display: none;
+}
 
   html,
   body {
