@@ -89,25 +89,27 @@
       align-items: center;
     }
     .custom-block a {
-      font-size: 10px;
-      width: 243px;
+      font-size: 30px;
+      width: 262px;
       text-decoration: none;
       color: black;
       font-weight: bold;
       border-radius: 10px;
-      padding: 5px;
+      padding: 7px;
       background-color: #ADFF45;
       margin-top: 10px;
       margin-bottom: 10px;
-    }
+  }
+  
+  
     .custom-block h1{
     color: #ADFF45;
     font-size: 20px;
     text-align: center;
     }
     .custom-block img{
-      width: 150px;
-      height: 150px;
+      width: 300px;
+      height: 300px;
    
     }
     .text p{
