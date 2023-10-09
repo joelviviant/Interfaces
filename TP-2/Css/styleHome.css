@@ -225,7 +225,7 @@
   display: none;
 }
 .preloader-active {
-  background-image: url(../Images/FONDO.jpg);
+  background-image: url(../Images/FONDO-MOBILE.jpg);
   background-size: cover; /* La imagen se ajustará al tamaño de la ventana de visualización */
   background-repeat: no-repeat;
   background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
@@ -278,7 +278,8 @@ footer {
   flex-direction: center; /* Alinea las imágenes verticalmente en una columna */
 }
 .footer-logo img {
-  max-width: 100%;  
+  max-width: 100%; 
+ 
 }
 .footer-terms img {
   margin-top: 15%;
