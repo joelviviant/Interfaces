@@ -373,6 +373,13 @@ h6 {
   gap: 5em;
   color: #ADFF45;
 }
+.desliza-carrousel{
+  font-size: 15px;
+  TEXT-ALIGN: CENTER;
+  color: #FF4593;
+}
+
+
 .swiper-pagination{
   display: none!important;
 }
