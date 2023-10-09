@@ -363,21 +363,24 @@ h6 {
 }
 
 .card-title{
-  margin-top: 25px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
-  margin-left:10%;
+  margin-left:4%;
+  font-size: large;
   gap: 5em;
+  color: #ADFF45;
 }
 
 
 /*Carrousel*/
 .container-carrousel {
-    position: relative;
-    overflow: hidden;
-    width: 430px;
-    height: 250px;
-    margin-top: 3%;
+  position: relative;
+  overflow: hidden;
+  width: 430px;
+  height: 200px;
+  margin-top: 3%;
+  margin-bottom: 8%;
 }
 
 .carrousel {
