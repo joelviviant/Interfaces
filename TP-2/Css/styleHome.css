@@ -4,7 +4,7 @@
   body {
     width: 100%;
     height: 100%;
-    margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
+    margin: 0; 
     padding: 0
   }
   body{
@@ -348,6 +348,161 @@ h6 {
   font-size: x-small; 
 }
 
+/*ESTILOS PARA LOS CARROUSELES*/
+
+.contenedor-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5em;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.card-title{
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-left:10%;
+  gap: 5em;
+}
+/*Botones*/
+.btn-der {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    color: #FF4593;
+}
+
+.btn-izq {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    color: #FF4593;
+    transform: rotate(180deg);
+}
+
+/*Carrousel*/
+.container-carrousel {
+    position: relative;
+    overflow: hidden;
+    width: 430px;
+    height: 150px;
+    margin-top: 3%;
+}
+
+.carrousel {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    transition: transform .3s ease-out;
+}
+
+.card-title{
+  color: #ADFF45;
+}
+
+/*Cards*/
+.card {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.card .card-nombre {
+    width: 100%;
+    height: 100px;
+    background: #281F3E;
+    position: absolute;
+    bottom: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+    /*Efectos hover a las card cuando se muestra el precio*/
+    .card:hover .card-nombre {
+        display: flex;
+    }
+
+    .card:hover .card-imagen {
+        opacity: .5;
+    }
+
+.card-nombre h3 {
+    color: #FF9900;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    padding: 1em;
+}
+
+.card .card-imagen {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card .card-precio {
+    display: flex;
+    position: absolute;
+    background: #281F3E;
+    width: 148px;
+    height: 47px;
+    border-top-left-radius: 20px;
+    color: #FF9900;
+    align-items: center;
+    z-index: 1;
+    border-top-right-radius: 20px;
+}
+
+.card .icon-estado {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background: #281F3E;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.icon-estado .estado {
+  width: 25px;
+  height: 25px;
+  color: #FF4593;
+}
+
+/*Botones*/
+.btn-der {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    color: #FF4593;
+}
+
+.btn-izq {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    color: #FF4593;
+    transform: rotate(180deg);
+}
+
+
 
 }
 
@@ -559,11 +714,11 @@ nav{
     margin-bottom: 100px;
   }
 
-  .contenedor-principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5em;
+.contenedor-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5em;
 }
 
 .contenedor {
