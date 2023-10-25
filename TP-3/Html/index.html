@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zone Games</title>
+    <link rel="shortcut icon" href="../Images/icono.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link REL=StyleSheet HREF="../Css/style.css" TYPE="text/css" MEDIA=screen> 
+    <link href="https://fonts.googleapis.com/css?family=Poller+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="home.html">
+        <img src="../Images/icono.ico" alt="Zone Games">
+      </a>
+      <div class="logo-text">
+          <a href="home.html">
+              <div>Zone</div>
+          </a>
+          <a href="home.html">
+              <div>Games</div>
+          </a>
+      </div>
+  </div>
+    <div class="search">
+        <input type="text" placeholder="🔍 Busca tu juego favorito">
+    </div>
+    <ul class="links">
+        <li><a href="#">Lanzamientos</a></li>
+        <li><a href="#">Ofertas</a></li>
+    </ul>
+    <button class="buy-button">Comprar Juegos</button>
+  <sidebar>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <label for="menu-checkbox" class="menu-icon">&#9776;</label>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <img src="../Images/perfil.png" alt="perfil">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <h7>Jenny Wilson</h7>
+        <p>jennywil@gmail.com</p>
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Mi Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mis Juegos</a>
+          </li>
+          <li>
+            <select name="categorias" class="categorias">
+              <option disabled selected>Categorías ▽</option>
+              <option>Para ti</option>
+              <option>Accion</option>
+              <option>Carreras</option>
+              <option>Estrategia</option>
+              <option>Puzzle</option>
+            </select>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Carrito</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Configuracion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Cerrar Sesion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Soporte</a>
+          </li>
+        </ul>
+      </div>
+      <div class="offcanvas-footer">
+        <img src="../Images/redes/Vector.png" alt="perfil">
+        <img src="../Images/redes/linkedin.png" alt="perfil">
+        <img src="../Images/redes/instagram.png" alt="perfil">
+        <img src="../Images/redes/youtube.png" alt="perfil">
+        <img src="../Images/redes/twitter.png" alt="perfil">
+      </div>
+    </div>
+  </sidebar>
+</nav>
+  <main>
+    <h1 class="titulo">Bienvenidos a Zone Games</h1>
+    <div class="container">      
+      <form>
+        <h4>Registro</h4>
+          <div class="form-group">
+              <label for="nombre">* Nombre:</label>
+              <input type="text" id="nombre" placeholder="Nombre" name="nombre" required>
+          </div>
+          <div class="form-group">
+              <label for="apellido">* Apellido:</label>
+              <input type="text" id="apellido" placeholder="Apellido" name="apellido" required>
+          </div>
+          <div class="form-group">
+              <label for="edad">* Edad:</label>
+              <input type="number" id="edad" placeholder="Edad" name="edad" required>
+          </div>
+          <h4>Sobre tu cuenta:</h4>
+          <div class="form-group">
+              <label for="email">* Email:</label>
+              <input type="email" id="email" placeholder="Email" name="email" required>
+          </div>
+          <div class="form-group">
+              <label for="nickname">Nickname:</label>
+              <input type="text" id="nickname" placeholder="Nickname" name="nickname" required>
+          </div>
+          <div class="form-group">
+              <label for="contrasena">* Contraseña:</label>
+              <input type="password" id="contrasena" placeholder="Contraseña" name="contrasena" required>
+          </div>
+          <div class="form-group">
+              <label for="repetir-contrasena">* Repetir Contraseña:</label>
+              <input type="password" id="repetir-contrasena" placeholder="Repetir contraseña" name="repetir-contrasena" required>
+          </div>
+          <div class="form-group img-captcha">
+            <img id="captcha" src="../Images/captcha.png" alt="Captcha">
+        </div>
+          <div class="form-group">
+              <button type="submit">Registrarme</button>
+          </div>
+      </form>
+      <p>¿Ya tienes una cuenta? <a href="login.html">Iniciar sesión</a></p>
+      <div class="social-login">
+        <button class="google-login">
+          <img src="../Images/google.png" alt="Google Icon">
+          Ingresar con Google
+      </button>
+      
+      <button class="facebook-login">
+          <img src="../Images/facebook.png" alt="Facebook Icon">
+          Ingresar con Facebook
+      </button>
+      </div>
+  </div>
+  </main>  
+  <footer>
+    <div>
+      <h2>Acerca De Zona Games:</h2>
+      <div class="footer-description">
+        <p>Zona Games - Tu Destino para Juegos en Línea<br>
+        Bienvenido a Zona Games, tu oasis de entretenimiento digital. En Zona Games, estamos comprometidos en brindarte una experiencia completa de juegos en línea, tanto si buscas
+        emocionantes juegos gratuitos como si estás dispuesto a descubrir títulos premium.</p>
+    
+        <p>Nuestro extenso catálogo abarca una amplia variedad de géneros y estilos de juegos, desde aventuras épicas hasta emocionantes desafíos multijugador.
+       Ya seas un jugador casual que busca pasar un rato agradable o un jugador apasionado en busca de competición, encontrarás algo para satisfacer tu sed de diversión en Zona Games.</p>
+      </div>
+      <div class="footer-links">
+        <div class="contact-links">
+          <h3>Contacto:</h3>
+          <ul>
+            <li>
+              <p class="contact">Contacto@zonagames.com</p>
+            </li>
+            <li>
+              <p class="contact-number">11-0303456</p>
+            </li>
+          </ul>          
+        </div>
+        <div class="links-utiles">
+          <h4>Enlaces Útiles:</h4>
+            <ul>
+              <li>Politica de privacidad</li>
+              <li>Trabaja con nosotros</li>
+            </ul>
+        </div>
+        <div class="links-redes">
+          <h5>Nuestras Redes:</h5>
+          <img src="../Images/facebook.png" alt="facebook">
+          <img src="../Images/twitter.png" alt="twitter">
+          <img src="../Images/instagram.png" alt="instagram">
+          <img src="../Images/discord.png" alt="discord">
+        </div>  
+      </div>
+      <div class="footer-logo">
+        <img src="../Images/Logo.png" alt="logo">
+        <img src="../Images/zone-games.png" alt="zonagames">
+      </div>
+      <div class="footer-terms">
+        <img src="../Images/qr.png" alt="qr">
+        <h6>Nuestros Terminos De Uso</h6>
+    </div>
+      <div class="footer-below">
+        <p class="txt-below">El uso de este sitio significa la aceptación de términos de uso - Copyright Zone games © 2023 All right reserved</p>
+      </div>
+  </div>
+  </footer>
+</body>
+</html>

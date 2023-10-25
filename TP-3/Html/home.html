@@ -1,0 +1,2200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zone Games</title>
+        <link rel="shortcut icon" href="../Images/icono.ico">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link REL=StyleSheet HREF="../Css/styleHome.css" TYPE="text/css" MEDIA=screen> 
+        <link href="https://fonts.googleapis.com/css?family=Poller+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        
+    </head>
+<body class="preloader-active">
+    <div class="preloader">
+        <div class="loader"></div>
+        <div class="percentage">0%</div>
+      </div>
+      <div class="contenido">
+        <nav>
+            <div class="logo">
+              <a href="home.html">
+                <img src="../Images/icono.ico" alt="Zone Games">
+              </a>
+              <div class="logo-text">
+                  <a href="home.html">
+                      <div>Zone</div>
+                  </a>
+                  <a href="home.html">
+                      <div>Games</div>
+                  </a>
+              </div>
+          </div>
+            <div class="search">
+                <input type="text" placeholder="🔍 Busca tu juego favorito">
+            </div>
+            <ul class="links">
+                <li><a href="#">Lanzamientos</a></li>
+                <li><a href="#">Ofertas</a></li>
+            </ul>
+            <div class="para-ti">
+                <select name="para-ti" class="para-ti">
+                    <option disabled selected>Para tí</option>
+                    <option>Lanzamientos</option>
+                    <option>Ofertas</option>
+                    <option>Próximos juegos</option>
+                    <option>Promociones Bancarias</option>
+                  </select>
+            </div>
+            <button class="buy-button-mobile"> Comprar</button>
+            <button class="buy-button">Comprar Juegos</button>
+          <sidebar>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+              <label for="menu-checkbox" class="menu-icon">&#9776;</label>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <img src="../Images/perfil.png" alt="perfil">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <h7>Jenny Wilson</h7>
+                <p>jennywil@gmail.com</p>
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Mi Perfil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Mis Juegos</a>
+                  </li>
+                  <li>
+                    <select name="categorias" class="categorias">
+                      <option disabled selected>Categorías ▽</option>
+                      <option>Para ti</option>
+                      <option>Accion</option>
+                      <option>Carreras</option>
+                      <option>Estrategia</option>
+                      <option>Puzzle</option>
+                    </select>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Carrito</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Configuracion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.html">Cerrar Sesion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Soporte</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="offcanvas-footer">
+                <img src="../Images/redes/Vector.png" alt="perfil">
+                <img src="../Images/redes/linkedin.png" alt="perfil">
+                <img src="../Images/redes/instagram.png" alt="perfil">
+                <img src="../Images/redes/youtube.png" alt="perfil">
+                <img src="../Images/redes/twitter.png" alt="perfil">
+              </div>
+            </div>
+          </sidebar>
+        </nav>
+          <div class="custom-block">
+            <h1>Tenemos Un Nuevo Juego Para Vos</h1>
+            <div class="sub">
+                <h1 id="titulo-game">4 En Linea</h1>
+            </div>
+            <div class="content">
+              <div class="text">
+                <p>El 4 en línea se juega de a dos jugadores sobre un tablero de siete columnas y seis filas.
+                    El objetivo es alinear cuatro fichas de un mismo jugador, horizontalmente, verticalmente o en diagonal.
+                    Las fichas tienen que ponerse en la línea inferior o sobre otra ficha.</p>
+              </div>
+              <img src="../Images/tablero.png" alt="Imagen de ejemplo">
+            </div>
+            <a href="game.html">Jugar</a>
+        </div>
+        <main>
+            <div class="carrousel-mobile">
+                <h1 class="card-title-mobile">Nuevos Lanzamientos Para Ti</h1>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$72,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/reddead2.jpg" alt="">
+                            <div class="card-nombre">
+                                <h3>Red Dead Redemption 2</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$57,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                  </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/farcry6.jpg" alt="">
+                            <div class="card-nombre">
+                                <h3>Far Cry 6</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$50,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/fh5.jpg" alt="">
+                            <div class="card-nombre">
+                                <h3>Forza Horizon 5</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$100,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/fifa.jpg" alt="">
+                            <div class="card-nombre">
+                                <h3>EA FC 24</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$50,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/gta.jpg" alt="">
+                            <div class="card-nombre">
+                                <h3>Grand Theft Auto V</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$68,99</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/god.jpg" alt="">
+                            <div class="card-nombre">
+                                <h3>God Of War</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$28,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/mafia3.jpg" alt="">
+                            <div class="card-nombre">
+                                <h3>Mafia III</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$30,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/rust.jpg" alt="">
+                            <div class="card-nombre">
+                                <h3>Rust</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$54,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/asasin.jpg" alt="">
+                            <div class="card-nombre">
+                                <h3>Asassin's Creed BrotherHood</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$8,99</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/citiesskylines.jpg" alt="">
+                            <div class="card-nombre">
+                                <h3>Cities Skylines</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">1,35</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/lfd.jpg" alt="">
+                            <div class="card-nombre">
+                                <h3>Left 4 Dead 2</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">FREE</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/cs2.jpg" alt="">
+                            <div class="card-nombre">
+                                <h3>Counter Strike 2</h3>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                  <h2 class="desliza-carrousel">Desliza para ver todos los juegos</h2>
+                </div>
+                <h1 class="card-title-mobile">Juegos de Accion</h1>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$75,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/pubg.png" alt="">
+                            <div class="card-nombre">
+                                <h3>PUBG</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$68,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                  </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/mw3.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Call of Duty MW3</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$300,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/reddead2.jpg" alt="">
+                            <div class="card-nombre">
+                                <h3>Red Dead Redemption 2</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$100,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/gta.jpg" alt="">
+                            <div class="card-nombre">
+                                <h3>Grand Theft Auto V</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$25,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/cs2.jpg" alt="">
+                            <div class="card-nombre">
+                                <h3>Counter Strike 2</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$68,99</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/dota.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Dota 2</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$28,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/mafia3.jpg" alt="">
+                            <div class="card-nombre">
+                                <h3>Mafia III</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$30,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/dark.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Dark Souls</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$54,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/asasin.jpg" alt="">
+                            <div class="card-nombre">
+                                <h3>Asassin's Creed BrotherHood</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$8,99</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/cyber.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Cyberpunk</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">1,35</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/lfd.jpg" alt="">
+                            <div class="card-nombre">
+                                <h3>Left 4 Dead 2</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">FREE</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/cs2.jpg" alt="">
+                            <div class="card-nombre">
+                                <h3>Counter Strike 2</h3>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                  <h2 class="desliza-carrousel">Desliza para ver todos los juegos</h2>
+                </div>
+                <h1 class="card-title-mobile">Juegos de Carreras</h1>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$72,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/fh5.jpg" alt="">
+                            <div class="card-nombre">
+                                <h3>Forza Horizon 5</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$68,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                  </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/nfsheat.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Need For Speed Heat</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$58,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/f1.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Formula 1 2023<h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$180,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/asseto.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Asseto Corsa</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$50,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/wrc.png" alt="">
+                            <div class="card-nombre">
+                                <h3>World Rally Cup</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$68,99</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/ride.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Ride 5</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$28,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/carx.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Car X </h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$30,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/snow.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Snow Runner</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$54,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/nfsrivals.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Need For Speed Rivals</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$8,99</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/asphalt8.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Asfalt 8</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">1,35</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/dirt5.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Dirt 5</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">FREE</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/fh4.jpg" alt="">
+                            <div class="card-nombre">
+                                <h3>Forza Horizon 4</h3>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                  <h2 class="desliza-carrousel">Desliza para ver todos los juegos</h2>
+                </div>
+                <h1 class="card-title-mobile">Juegos de Deportes</h1>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$388,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/fc2.png" alt="">
+                            <div class="card-nombre">
+                                <h3>EA Sports FC24"</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$57,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                  </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/2k.jpg" alt="">
+                            <div class="card-nombre">
+                                <h3>2k24</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$50,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/fotballmanager.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Football Manager 2023</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$100,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/futbolamericano.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Madden</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$50,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/golf.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Golf 2k23</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$68,99</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/baseball.png" alt="">
+                            <div class="card-nombre">
+                                <h3>baseball</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$28,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/mbape.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Fifa</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$30,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/efootball.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Efootball</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$54,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/basket.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Basketball 2</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$8,99</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/rugby24.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Rugby 24</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">1,35</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/headball.webp" alt="">
+                            <div class="card-nombre">
+                                <h3>Sports Heads Football</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">FREE</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/skaterxl.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Skater XL</h3>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                  <h2 class="desliza-carrousel">Desliza para ver todos los juegos</h2>
+                </div>
+                <h1 class="card-title-mobile">Juegos de Estrategia</h1>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$72,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/civilizacion.png" alt="">
+                            <div class="card-nombre">
+                                <h3>civilizacion VI</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$57,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                  </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/cityskylines.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Cityskylines</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$50,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/stellar.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Stellar </h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$100,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/kings3.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Kings III</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$50,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/word.png" alt="">
+                            <div class="card-nombre">
+                                <h3>World</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$68,99</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/slaythespire.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Slay The Spire</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$28,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/xcom.jpg" alt="">
+                            <div class="card-nombre">
+                                <h3>XCOM 2</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$30,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/toria.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Toria</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$54,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/wonder.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Wonder</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$8,99</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/totalwar.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Total War</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">1,35</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/ageofempires2.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Age Of Empires 2</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">FREE</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/callofwar.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Call Of War</h3>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                  <h2 class="desliza-carrousel">Desliza para ver todos los juegos</h2>
+                </div>
+                <h1 class="card-title-mobile">Juegos de Puzzle</h1>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$72,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/puzzle1.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Puzzle 1.0</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$57,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                  </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/puzzle2.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Puzzle 2.0</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$50,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/puzzle3.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Puzzle 3.0 </h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$100,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/puzzle4.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Puzzle 4.p</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$50,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/puzzle5.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Puzzle 5.0</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$68,99</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/puzzle6.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Puzzle 6.0</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$28,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/puzzle7.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Puzzle 7.0</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$30,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/puzzle8.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Puzzle 8.0</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$54,00</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/puzzle9.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Puzzle 9.0</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">$8,99</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/candycrush.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Candy Crash Saga</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">1,35</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/ballsort.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Ball Sort Puzzle</h3>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card">
+                            <label class="card-precio">FREE</label>
+                            <div class="icon-estado">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                            </div>
+                            <img class="card-imagen" src="../Images/blockpuzzle.png" alt="">
+                            <div class="card-nombre">
+                                <h3>Blocl Puzzle</h3>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                  <h2 class="desliza-carrousel">Desliza para ver todos los juegos</h2>
+                </div>
+            </div>
+            <div class="carrousel-desktop">
+            <h1 class="card-title">Nuevos Lanzamientos Para Ti</h1>
+            <div class="contenedor-principal">
+                <div class="contenedor">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi btn-izq" viewBox="0 0 16 16" onclick="slideIzq(this)">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                    </svg>
+                   
+                    <div class="container-carrousel">
+                        <div class="carrousel">
+                            <div class="card">
+                                <label class="card-precio">$72,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/reddead2.jpg" alt="">
+                                <div class="card-nombre">
+                                    <h3>Red Dead Redemption 2</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$57,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                      </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/farcry6.jpg" alt="">
+                                <div class="card-nombre">
+                                    <h3>Far Cry 6</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$50,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/fh5.jpg" alt="">
+                                <div class="card-nombre">
+                                    <h3>Forza Horizon 5</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$100,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/fifa.jpg" alt="">
+                                <div class="card-nombre">
+                                    <h3>EA FC 24</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$50,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/gta.jpg" alt="">
+                                <div class="card-nombre">
+                                    <h3>Grand Theft Auto V</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$68,99</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/god.jpg" alt="">
+                                <div class="card-nombre">
+                                    <h3>God Of War</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$28,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/mafia3.jpg" alt="">
+                                <div class="card-nombre">
+                                    <h3>Mafia III</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$30,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/rust.jpg" alt="">
+                                <div class="card-nombre">
+                                    <h3>Rust</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$54,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/asasin.jpg" alt="">
+                                <div class="card-nombre">
+                                    <h3>Asassin's Creed BrotherHood</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$8,99</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/citiesskylines.jpg" alt="">
+                                <div class="card-nombre">
+                                    <h3>Cities Skylines</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">1,35</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/lfd.jpg" alt="">
+                                <div class="card-nombre">
+                                    <h3>Left 4 Dead 2</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">FREE</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/cs2.jpg" alt="">
+                                <div class="card-nombre">
+                                    <h3>Counter Strike 2</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi btn-der" viewBox="0 0 16 16" onclick="slideDer(this)">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi btn-der-mobile" viewBox="0 0 16 16" onclick="slideDer(this)">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                    </svg>
+                </div>
+            </div>
+            <h1 class="card-title">Juegos De Accion</h1>
+            <div class="contenedor-principal">
+                <div class="contenedor">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi btn-izq" viewBox="0 0 16 16" onclick="slideIzq(this)">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                    </svg>
+                    <div class="container-carrousel">
+                        <div class="carrousel">
+                            <div class="card">
+                                <label class="card-precio">$75,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/pubg.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>PUBG</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$68,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                      </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/mw3.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Call of Duty MW3</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$300,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/reddead2.jpg" alt="">
+                                <div class="card-nombre">
+                                    <h3>Red Dead Redemption 2</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$100,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/gta.jpg" alt="">
+                                <div class="card-nombre">
+                                    <h3>Grand Theft Auto V</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$25,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/cs2.jpg" alt="">
+                                <div class="card-nombre">
+                                    <h3>Counter Strike 2</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$68,99</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/dota.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Dota 2</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$28,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/mafia3.jpg" alt="">
+                                <div class="card-nombre">
+                                    <h3>Mafia III</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$30,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/dark.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Dark Souls</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$54,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/asasin.jpg" alt="">
+                                <div class="card-nombre">
+                                    <h3>Asassin's Creed BrotherHood</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$8,99</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/cyber.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Cyberpunk</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">1,35</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/lfd.jpg" alt="">
+                                <div class="card-nombre">
+                                    <h3>Left 4 Dead 2</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">FREE</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/cs2.jpg" alt="">
+                                <div class="card-nombre">
+                                    <h3>Counter Strike 2</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi btn-der" viewBox="0 0 16 16" onclick="slideDer(this)">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                    </svg>
+                </div>
+            </div>
+            <h1 class="card-title">Juegos De Carreras</h1>
+            <div class="contenedor-principal">
+                <div class="contenedor">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi btn-izq" viewBox="0 0 16 16" onclick="slideIzq(this)">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                    </svg>
+                    <div class="container-carrousel">
+                        <div class="carrousel">
+                            <div class="card">
+                                <label class="card-precio">$72,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/fh5.jpg" alt="">
+                                <div class="card-nombre">
+                                    <h3>Forza Horizon 5</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$68,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                      </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/nfsheat.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Need For Speed Heat</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$58,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/f1.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Formula 1 2023/h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$180,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/asseto.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Asseto Corsa</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$50,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/wrc.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>World Rally Cup</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$68,99</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/ride.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Ride 5</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$28,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/carx.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Car X </h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$30,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/snow.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Snow Runner</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$54,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/nfsrivals.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Need For Speed Rivals</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$8,99</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/asphalt8.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Asfalt 8</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">1,35</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/dirt5.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Dirt 5</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">FREE</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/fh4.jpg" alt="">
+                                <div class="card-nombre">
+                                    <h3>Forza Horizon 4</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi btn-der" viewBox="0 0 16 16" onclick="slideDer(this)">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                    </svg>
+                </div>
+            </div>
+            <h1 class="card-title">Juegos De Deportes</h1>
+            <div class="contenedor-principal">
+                <div class="contenedor">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi btn-izq" viewBox="0 0 16 16" onclick="slideIzq(this)">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                    </svg>
+                    <div class="container-carrousel">
+                        <div class="carrousel">
+                            <div class="card">
+                                <label class="card-precio">$388,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/fc2.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>EA Sports FC24"</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$57,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                      </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/2k.jpg" alt="">
+                                <div class="card-nombre">
+                                    <h3>2k24</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$50,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/fotballmanager.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Football Manager 2023</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$100,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/futbolamericano.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Madden</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$50,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/golf.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Golf 2k23</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$68,99</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/baseball.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>baseball</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$28,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/mbape.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Fifa</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$30,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/efootball.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Efootball</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$54,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/basket.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Basketball 2</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$8,99</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/rugby24.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Rugby 24</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">1,35</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/headball.webp" alt="">
+                                <div class="card-nombre">
+                                    <h3>Sports Heads Football</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">FREE</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/skaterxl.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Skater XL</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi btn-der" viewBox="0 0 16 16" onclick="slideDer(this)">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                    </svg>
+                </div>
+            </div>
+            <h1 class="card-title">Juegos De Estrategia</h1>
+            <div class="contenedor-principal">
+                <div class="contenedor">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi btn-izq" viewBox="0 0 16 16" onclick="slideIzq(this)">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                    </svg>
+                    <div class="container-carrousel">
+                        <div class="carrousel">
+                            <div class="card">
+                                <label class="card-precio">$72,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/civilizacion.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>civilizacion VI</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$57,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                      </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/cityskylines.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Cityskylines</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$50,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/stellar.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Stellar </h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$100,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/kings3.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Kings III</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$50,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/word.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>World</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$68,99</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/slaythespire.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Slay The Spire</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$28,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/xcom.jpg" alt="">
+                                <div class="card-nombre">
+                                    <h3>XCOM 2</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$30,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/toria.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Toria</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$54,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/wonder.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Wonder</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$8,99</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/totalwar.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Total War</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">1,35</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/ageofempires2.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Age Of Empires 2</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">FREE</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/callofwar.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Call Of War</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi btn-der" viewBox="0 0 16 16" onclick="slideDer(this)">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                    </svg>
+                </div>
+            </div>
+            <h1 class="card-title">Juegos De Puzzle
+            </h1>
+            <div class="contenedor-principal">
+                <div class="contenedor">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi btn-izq" viewBox="0 0 16 16" onclick="slideIzq(this)">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                    </svg>
+                    <div class="container-carrousel">
+                        <div class="carrousel">
+                            <div class="card">
+                                <label class="card-precio">$72,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/puzzle1.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Puzzle 1.0</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$57,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                      </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/puzzle2.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Puzzle 2.0</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$50,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/puzzle3.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Puzzle 3.0 </h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$100,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/puzzle4.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Puzzle 4.p</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$50,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/puzzle5.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Puzzle 5.0</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$68,99</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/puzzle6.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Puzzle 6.0</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$28,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/puzzle7.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Puzzle 7.0</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$30,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/puzzle8.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Puzzle 8.0</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$54,00</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/puzzle9.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Puzzle 9.0</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">$8,99</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/candycrush.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Candy Crash Saga</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">1,35</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/ballsort.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Ball Sort Puzzle</h3>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <label class="card-precio">FREE</label>
+                                <div class="icon-estado">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi estado" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                                <img class="card-imagen" src="../Images/blockpuzzle.png" alt="">
+                                <div class="card-nombre">
+                                    <h3>Blocl Puzzle</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi btn-der" viewBox="0 0 16 16" onclick="slideDer(this)">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                    </svg>
+                </div>
+            </div>
+            </div>
+        </main>
+        <footer>
+        <div>
+          <h2>Acerca De Zona Games:</h2>
+          <div class="footer-description">
+            <p>Zona Games - Tu Destino para Juegos en Línea<br>
+            Bienvenido a Zona Games, tu oasis de entretenimiento digital. En Zona Games, estamos comprometidos en brindarte una experiencia completa de juegos en línea, tanto si buscas
+            emocionantes juegos gratuitos como si estás dispuesto a descubrir títulos premium.</p>
+        
+            <p>Nuestro extenso catálogo abarca una amplia variedad de géneros y estilos de juegos, desde aventuras épicas hasta emocionantes desafíos multijugador.
+           Ya seas un jugador casual que busca pasar un rato agradable o un jugador apasionado en busca de competición, encontrarás algo para satisfacer tu sed de diversión en Zona Games.</p>
+          </div>
+          <div class="footer-links">
+            <div class="contact-links">
+              <h3>Contacto:</h3>
+              <ul>
+                <li>
+                  <p class="contact">Contacto@zonagames.com</p>
+                </li>
+                <li>
+                  <p class="contact-number">11-0303456</p>
+                </li>
+              </ul>          
+            </div>
+            <div class="links-utiles">
+              <h4>Enlaces Útiles:</h4>
+                <ul>
+                  <li>Politica de privacidad</li>
+                  <li>Trabaja con nosotros</li>
+                </ul>
+            </div>
+            <div class="links-redes">
+              <h5>Nuestras Redes:</h5>
+              <img src="../Images/facebook.png" alt="facebook">
+              <img src="../Images/twitter.png" alt="twitter">
+              <img src="../Images/instagram.png" alt="instagram">
+              <img src="../Images/discord.png" alt="discord">
+            </div>  
+          </div>
+          <div class="footer-logo">
+            <img src="../Images/Logo.png" alt="logo">
+            <img src="../Images/zone-games.png" alt="zonagames">
+          </div>
+          <div class="footer-terms">
+            <img src="../Images/qr.png" alt="qr">
+            <h6>Nuestros Terminos De Uso</h6>
+        </div>
+          <div class="footer-below">
+            <p class="txt-below">El uso de este sitio significa la aceptación de términos de uso - Copyright Zone games © 2023 All right reserved</p>
+          </div>
+      </div>
+        </footer>
+      </div>
+      
+  <script src="../Js/home.js"></script>
+</body>
+</html>
