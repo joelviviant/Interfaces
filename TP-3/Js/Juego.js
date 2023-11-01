@@ -5,17 +5,43 @@ class Juego {
         this.jugadores = [jugador1, jugador2];
         this.context = context;
         this.juegoEnCurso = true;
+        this.fichas = [];
+        this.fichasEnJuego = [];
+        
+        this.inicializarFichas();
+    }
+
+    inicializarFichas() {
+        for(let i = 0; i < 21; i++) {
+            let fichaJ1 = new Ficha(this.context, 50, 50, 30, this.jugadores[0].color, this.jugadores[0]);
+            this.fichas.push(fichaJ1);
+        }
+        for(let i = 0; i < 21; i++) {
+            let fichaJ2 = new Ficha(this.context, 1000, 50, 30, this.jugadores[1].color, this.jugadores[1]);
+            this.fichas.push(fichaJ2);
+        }
+        this.drawFichas();
+    }
+
+    drawFichas() {
+        clearCanvas();
+        this.context.fillStyle = "grey";
+        this.context.fillRect(0, 0, canvasWidth, canvasHeight);
+
+        this.tablero.draw();
+        for(let i = 0; i < this.fichas.length; i++) {
+            this.fichas[i].draw();
+        }
     }
     
-    manejarTurno(columna) {
-        if(this.juegoEnCurso) {
+    colocarFicha(columna, lastClickedFicha) {
+        if (this.juegoEnCurso) {
             let posicion = this.tablero.colocarFicha(columna, this.jugadorActual);
-            if(posicion) {
-                let ficha = new Ficha(this.context, posicion.x, posicion.y, 30, this.jugadorActual.color);
-                ficha.draw();
-                
-                // Verificar si hay un ganador
-                if(this.verificarGanador(posicion.fila, columna, this.jugadorActual)) {
+            if (posicion) {
+                lastClickedFicha.setPosition(posicion.x, posicion.y);
+                lastClickedFicha.colocada = true;
+                this.fichasEnJuego.push(lastClickedFicha);                
+                if(this.tablero.alineoCuatro(posicion.fila, columna, this.jugadorActual)) {
                     this.anunciarGanador(this.jugadorActual);
                     this.juegoEnCurso = false;
                     this.reiniciarJuego();
@@ -24,19 +50,6 @@ class Juego {
                 }
             }
         }
-    }
-    
-    verificarGanador(fila, columna, jugadorActual) {
-        if (
-            this.tablero.alineoCuatro(fila, columna, jugadorActual) ||
-            this.tablero.alineoCuatro(fila, columna - 1, jugadorActual) ||
-            this.tablero.alineoCuatro(fila, columna - 2, jugadorActual) ||
-            this.tablero.alineoCuatro(fila, columna + 1, jugadorActual)
-        ) {
-            return true;
-        }
-    
-        return false;
     }
 
     siguienteTurno() {
@@ -47,14 +60,31 @@ class Juego {
         }
     }
 
-    anunciarGanador(ganador) {
+    anunciarGanador(ganador, fichasGanadoras) {
         console.log("El ganador es: " + ganador.nombre);
+       
     }
 
+   
     reiniciarJuego() {
-        this.tablero.reiniciarTablero();
+        this.limpiarFichasEnJuego();  // Limpia solo las fichas en juego
+        this.tablero.reiniciarTablero();  // Limpia el tablero
+        this.drawFichas();  // Vuelve a dibujar las fichas restantes
+
         setTimeout(() => {
             this.juegoEnCurso = true;
         }, 3000);
+    }
+
+    limpiarFichasEnJuego() {
+        for (let i = 0; i < this.fichasEnJuego.length; i++) {
+            let ficha = this.fichasEnJuego[i];
+            // Borra la ficha del canvas
+            this.context.clearRect(ficha.x - ficha.radius, ficha.y - ficha.radius, ficha.radius * 2, ficha.radius * 2);
+        }
+        this.fichasEnJuego = [];  // Limpia el registro de fichas en juego
+
+        // Además, elimina las fichas del array 'fichas'
+        this.fichas = this.fichas.filter(ficha => !ficha.colocada);
     }
 }

@@ -44,6 +44,7 @@ class Tablero {
                 let x = (columna + 0.5) * this.tamanioCelda + (this.canvasWidth - this.columnas * this.tamanioCelda) / 2;
                 let y = (fila + 0.5) * this.tamanioCelda + (this.canvasHeight - this.filas * this.tamanioCelda) / 2;
                 let posicion = {x: x, y: y, fila: fila};
+                this.draw();
                 return posicion;
             }
         }
@@ -139,15 +140,24 @@ for (let f = startF, c = startC; f < this.filas && c < this.columnas; f++, c++) 
     return false;
 }
 
-    reiniciarTablero() {
-        setTimeout(() => {
-            this.draw();
-            for(let fila = 0; fila < this.filas; fila++) {
-                this.tablero[fila] = [];
-                for(let columna = 0; columna < this.columnas; columna++) {
-                    this.tablero[fila][columna] = 0;
-                }
-            };
-        }, 3000);
+limpiarFichas() {
+    this.fichas = [];
+    this.drawFichas();
+}
+
+reiniciarJuego() {
+    this.tablero.reiniciarTablero();
+    this.limpiarFichas();
+
+    setTimeout(() => {
+        this.juegoEnCurso = true;
+    }, 3000);
+}reiniciarTablero() {
+    for (let fila = 0; fila < this.filas; fila++) {
+        for (let columna = 0; columna < this.columnas; columna++) {
+            this.tablero[fila][columna] = 0;
+        }
     }
+    this.draw(); // Vuelve a dibujar el tablero
+}
 }
