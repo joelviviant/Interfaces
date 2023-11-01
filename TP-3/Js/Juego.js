@@ -13,7 +13,9 @@ class Juego {
             if(posicion) {
                 let ficha = new Ficha(this.context, posicion.x, posicion.y, 30, this.jugadorActual.color);
                 ficha.draw();
-                if(this.tablero.alineoCuatro(posicion.fila, columna, this.jugadorActual)) {
+                
+                // Verificar si hay un ganador
+                if(this.verificarGanador(posicion.fila, columna, this.jugadorActual)) {
                     this.anunciarGanador(this.jugadorActual);
                     this.juegoEnCurso = false;
                     this.reiniciarJuego();
@@ -22,6 +24,19 @@ class Juego {
                 }
             }
         }
+    }
+    
+    verificarGanador(fila, columna, jugadorActual) {
+        if (
+            this.tablero.alineoCuatro(fila, columna, jugadorActual) ||
+            this.tablero.alineoCuatro(fila, columna - 1, jugadorActual) ||
+            this.tablero.alineoCuatro(fila, columna - 2, jugadorActual) ||
+            this.tablero.alineoCuatro(fila, columna + 1, jugadorActual)
+        ) {
+            return true;
+        }
+    
+        return false;
     }
 
     siguienteTurno() {

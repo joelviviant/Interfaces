@@ -51,6 +51,7 @@ class Tablero {
     }
 
     alineoCuatro(fila, columna, jugadorActual) {
+        // Verificar horizontal
         let count = 0;
         for(let c = 0; c < this.columnas; c++) {
             if(this.tablero[fila][c] === jugadorActual) {
@@ -63,6 +64,7 @@ class Tablero {
             }
         }
 
+        // Verificar vertical
         count = 0;
         for(let f = 0; f < this.filas; f++) {
             if(this.tablero[f][columna] === jugadorActual) {
@@ -75,8 +77,67 @@ class Tablero {
             }
         }
 
-        return false;
+        // Verificar diagonal descendente (/)
+    count = 0;
+    let startF = Math.max(fila - 3, 0);
+    let startC = Math.max(columna - 3, 0);
+    for (let f = startF, c = startC; f < this.filas && c < this.columnas; f++, c++) {
+        if (this.tablero[f][c] === jugadorActual) {
+            count++;
+            if (count >= 4) {
+                return true;
+            }
+        } else {
+            count = 0;
+        }
     }
+    // Verificar diagonal descendente (\)
+count = 0;
+startF = Math.max(fila - 3, 0);
+startC = Math.max(columna - 3, 0);
+for (let f = startF, c = startC; f < this.filas && c < this.columnas; f++, c++) {
+    if (this.tablero[f][c] === jugadorActual) {
+        count++;
+        if (count >= 4) {
+            return true;
+        }
+    } else {
+        count = 0;
+    }
+}
+
+    // Verificar diagonal ascendente (\)
+    count = 0;
+    startF = Math.min(fila + 3, this.filas - 1);
+    startC = Math.max(columna - 3, 0);
+    for (let f = startF, c = startC; f >= 0 && c < this.columnas; f--, c++) {
+        if (this.tablero[f][c] === jugadorActual) {
+            count++;
+            if (count >= 4) {
+                return true;
+            }
+        } else {
+            count = 0;
+        }
+    }
+
+    // Verificar diagonal ascendente (/)
+    count = 0;
+    startF = Math.max(fila - 3, 0);
+    startC = Math.min(columna + 3, this.columnas - 1);
+    for (let f = startF, c = startC; f < this.filas && c >= 0; f++, c--) {
+        if (this.tablero[f][c] === jugadorActual) {
+            count++;
+            if (count >= 4) {
+                return true;
+            }
+        } else {
+            count = 0;
+        }
+    }
+
+    return false;
+}
 
     reiniciarTablero() {
         setTimeout(() => {
