@@ -121,13 +121,20 @@ class Juego {
         this.dibujarTemporizador(); // Dibuja el temporizador actualizado
     }
 
-   dibujarTemporizador() {
-    // Borra el área del canvas donde se muestra el temporizador
-    this.context.clearRect(this.tiempoX - 10, this.tiempoY - 30, 300, 30);
-    this.context.fillStyle = "#ADFF45";
-    this.context.font = "20px Arial";
-    this.context.fillText(`Tiempo restante: ${this.tiempoRestante} segundos`, this.tiempoX, this.tiempoY);
-}
+    dibujarTemporizador() {
+        // Borra el área del canvas donde se muestra el temporizador
+        this.context.clearRect(this.tiempoX - 10, this.tiempoY - 30, 300, 60); // Borra más espacio para el nuevo texto
+        this.context.fillStyle = "white";
+        this.context.font = "20px Arial";
+    
+        // Formatear el tiempo restante a 2 cifras
+        const tiempoFormateado = this.tiempoRestante < 10 ? `0${this.tiempoRestante}` : this.tiempoRestante;
+    
+        this.context.fillText(`Tiempo restante: ${tiempoFormateado} segundos`, this.tiempoX, this.tiempoY);
+        
+        // Agregar texto del turno del jugador
+        this.context.fillText(`Turno del Jugador: ${this.jugadorActual.nombre}`, this.tiempoX, this.tiempoY + 30);
+    }
     siguienteTurno() {
         if (this.jugadorActual == this.jugadores[0]) {
             this.jugadorActual = this.jugadores[1];
