@@ -95,6 +95,19 @@ nav{
   .buy-button:hover {
   background-color: #FF9900; 
   }
+  .bts-game button{
+    background-color: #ADFF45; 
+    color: black;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+  }
+    
+  .bts-game button:hover {
+    background-color: #FF9900; 
+    }
   
   .menu-icon {
     margin-bottom: 10px;
