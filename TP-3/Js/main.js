@@ -27,7 +27,17 @@ let jugador2 = new Jugador("Oscar", "blue");
 //Se crea el Juego
 let juego = new Juego(tablero, jugador1, jugador2, context);
 
-
+let startButton = document.getElementById('startButton');
+startButton.addEventListener('click', () => {
+    // Lógica para comenzar el juego
+    juego.inicializarJuego();
+});
+let restartButton = document.getElementById('restartButton');
+restartButton.addEventListener('click', () => {
+    juego.detenerTemporizador();
+    juego.reiniciarJuego();
+    
+});
 
 
 //Eventos de Mouse

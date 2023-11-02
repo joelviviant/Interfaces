@@ -14,8 +14,7 @@ class Juego {
         this.restartX = 750; // Posición X del RESTART en el canvas
         this.restartY = 20; // Posición Y del RESTART en el canvas
         this.inicializarFichas();
-        this.dibujarTemporizador();
-        this.iniciarTemporizador();
+        
     }
     
     inicializarFichas() {
@@ -48,6 +47,12 @@ class Juego {
             this.tiempoRestante--;
             this.dibujarTemporizador();
     
+            if (this.tiempoRestante <= 0) {
+                clearInterval(this.tiempoID);
+                this.tiempoRestante = 0; // Asegura que el tiempo no sea negativo
+                this.dibujarTemporizador();
+                this.colocarFichaAleatoria(this.jugadorActual); // Agrega esta línea
+            }
         }, 1000);
     }
    
@@ -79,8 +84,8 @@ class Juego {
        
     }
     inicializarJuego() {
-        // Inicialización del juego
-        this.iniciarTemporizador(); // Inicia el temporizador
+        
+        this.iniciarTemporizador(); 
     }
     
    
@@ -89,19 +94,9 @@ class Juego {
         this.tablero.reiniciarTablero();
         this.resetearBordesFichas();
         this.fichasGanadoras = [];
-        this.tiempoRestante = 30; // Reiniciar el tiempo
-        this.drawFichas();
-    
-        // Detener el temporizador actual
-        clearInterval(this.tiempoID);
-    
-        // Iniciar el temporizador para el nuevo turno
+        this.detenerTemporizador();
         this.iniciarTemporizador();
-        this.actualizarTemporizador();
-    
-        setTimeout(() => {
-            this.juegoEnCurso = true;
-        }, 3000);
+        this.drawFichas();
     }
 
     limpiarFichasEnJuego() {
