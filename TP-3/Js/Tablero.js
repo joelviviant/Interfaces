@@ -15,21 +15,27 @@ class Tablero {
             }
         }
     }
-
     draw() {
         let tableroWidth = this.columnas * this.tamanioCelda;
         let tableroHeight = this.filas * this.tamanioCelda;
-
+    
         let offsetX = (this.canvasWidth - tableroWidth) / 2;
         let offsetY = (this.canvasHeight - tableroHeight) / 2;
-
-        this.context.fillStyle = this.color;
-        this.context.fillRect(offsetX, offsetY, tableroWidth, tableroHeight);
-
-        for(let fila = 0; fila < this.filas; fila++) {
-            for(let columna = 0; columna < this.columnas; columna++) {
+    
+        
+    
+        for (let fila = 0; fila < this.filas; fila++) {
+            for (let columna = 0; columna < this.columnas; columna++) {
                 let x = offsetX + columna * this.tamanioCelda;
                 let y = offsetY + fila * this.tamanioCelda;
+    
+                // Dibuja un círculo relleno de verde en cada casillero
+                this.context.fillStyle = "#ADFF45";
+                this.context.beginPath();
+                this.context.arc(x + this.tamanioCelda / 2, y + this.tamanioCelda / 2, this.tamanioCelda / 2, 0, 2 * Math.PI);
+                this.context.fill();
+    
+                // Dibuja las líneas del tablero
                 this.context.strokeRect(x, y, this.tamanioCelda, this.tamanioCelda);
             }
         }
