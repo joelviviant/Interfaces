@@ -31,7 +31,9 @@ let startButton = document.getElementById('startButton');
 startButton.addEventListener('click', () => {
     // Lógica para comenzar el juego
     juego.inicializarJuego();
+    juego.dibujarTemporizador();
 });
+
 let restartButton = document.getElementById('restartButton');
 restartButton.addEventListener('click', () => {
     juego.detenerTemporizador();

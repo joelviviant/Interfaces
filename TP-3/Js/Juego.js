@@ -121,7 +121,7 @@ class Juego {
    dibujarTemporizador() {
     // Borra el área del canvas donde se muestra el temporizador
     this.context.clearRect(this.tiempoX - 10, this.tiempoY - 30, 300, 30);
-    this.context.fillStyle = "white";
+    this.context.fillStyle = "#ADFF45";
     this.context.font = "20px Arial";
     this.context.fillText(`Tiempo restante: ${this.tiempoRestante} segundos`, this.tiempoX, this.tiempoY);
 }
