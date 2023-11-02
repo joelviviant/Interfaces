@@ -28,14 +28,7 @@ let jugador2 = new Jugador("Oscar", "blue");
 let juego = new Juego(tablero, jugador1, jugador2, context);
 
 
-//Evento en el canvas, para cuando se clickea una columna coloque la ficha
-/*canvas.addEventListener('click', function(e) {
-    let rect = canvas.getBoundingClientRect();
-    let offsetX = e.clientX - rect.left;
-    let columna = Math.floor((offsetX - (canvasWidth - tablero.columnas * tablero.tamanioCelda) / 2) / tablero.tamanioCelda);
 
-    juego.manejarTurno(columna, fichas);
-});*/
 
 //Eventos de Mouse
 canvas.addEventListener('mousedown', onMouseDown, false);

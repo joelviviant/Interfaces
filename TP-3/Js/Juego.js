@@ -7,10 +7,17 @@ class Juego {
         this.juegoEnCurso = true;
         this.fichas = [];
         this.fichasEnJuego = [];
-        
+        this.tiempoRestante = 30; // Tiempo inicial en segundos
+        this.tiempoID = null; // Identificador del temporizador
+        this.tiempoX = 400; // Posición X del temporizador en el canvas
+        this.tiempoY = 50; // Posición Y del temporizador en el canvas
+        this.restartX = 750; // Posición X del RESTART en el canvas
+        this.restartY = 20; // Posición Y del RESTART en el canvas
         this.inicializarFichas();
+        this.dibujarTemporizador();
+        this.iniciarTemporizador();
     }
-
+    
     inicializarFichas() {
         for(let i = 0; i < 21; i++) {
             let fichaJ1 = new Ficha(this.context, 50, 50, 30, this.jugadores[0].color, this.jugadores[0]);
@@ -22,10 +29,10 @@ class Juego {
         }
         this.drawFichas();
     }
-
+   
     drawFichas() {
         clearCanvas();
-        this.context.fillStyle = "grey";
+        this.context.fillStyle = "black";
         this.context.fillRect(0, 0, canvasWidth, canvasHeight);
 
         this.tablero.draw();
@@ -33,6 +40,19 @@ class Juego {
             this.fichas[i].draw();
         }
     }
+ 
+    iniciarTemporizador() {
+        this.tiempoRestante = 30;
+        this.dibujarTemporizador();
+        this.tiempoID = setInterval(() => {
+            this.tiempoRestante--;
+            this.dibujarTemporizador();
+    
+        }, 1000);
+    }
+   
+    
+
     
     colocarFicha(columna, lastClickedFicha) {
         if (this.juegoEnCurso) {
@@ -52,25 +72,33 @@ class Juego {
         }
     }
 
-    siguienteTurno() {
-        if(this.jugadorActual == this.jugadores[0]) {
-            this.jugadorActual = this.jugadores[1];
-        } else if (this.jugadorActual == this.jugadores[1]) {
-            this.jugadorActual = this.jugadores[0];
-        }
-    }
+    
 
     anunciarGanador(ganador, fichasGanadoras) {
         console.log("El ganador es: " + ganador.nombre);
        
     }
-
+    inicializarJuego() {
+        // Inicialización del juego
+        this.iniciarTemporizador(); // Inicia el temporizador
+    }
+    
    
     reiniciarJuego() {
-        this.limpiarFichasEnJuego();  // Limpia solo las fichas en juego
-        this.tablero.reiniciarTablero();  // Limpia el tablero
-        this.drawFichas();  // Vuelve a dibujar las fichas restantes
-
+        this.limpiarFichasEnJuego();
+        this.tablero.reiniciarTablero();
+        this.resetearBordesFichas();
+        this.fichasGanadoras = [];
+        this.tiempoRestante = 30; // Reiniciar el tiempo
+        this.drawFichas();
+    
+        // Detener el temporizador actual
+        clearInterval(this.tiempoID);
+    
+        // Iniciar el temporizador para el nuevo turno
+        this.iniciarTemporizador();
+        this.actualizarTemporizador();
+    
         setTimeout(() => {
             this.juegoEnCurso = true;
         }, 3000);
@@ -87,4 +115,33 @@ class Juego {
         // Además, elimina las fichas del array 'fichas'
         this.fichas = this.fichas.filter(ficha => !ficha.colocada);
     }
+  
+
+    detenerTemporizador() {
+        clearInterval(this.tiempoID);
+        this.tiempoRestante = 30;
+        this.dibujarTemporizador(); // Dibuja el temporizador actualizado
+    }
+
+   dibujarTemporizador() {
+    // Borra el área del canvas donde se muestra el temporizador
+    this.context.clearRect(this.tiempoX - 10, this.tiempoY - 30, 300, 30);
+    this.context.fillStyle = "white";
+    this.context.font = "20px Arial";
+    this.context.fillText(`Tiempo restante: ${this.tiempoRestante} segundos`, this.tiempoX, this.tiempoY);
+}
+    siguienteTurno() {
+        if (this.jugadorActual == this.jugadores[0]) {
+            this.jugadorActual = this.jugadores[1];
+            this.detenerTemporizador(); // Detiene el temporizador actual
+            this.iniciarTemporizador(); // Inicia el temporizador para el nuevo turno
+        } else if (this.jugadorActual == this.jugadores[1]) {
+            this.jugadorActual = this.jugadores[0];
+            this.detenerTemporizador(); // Detiene el temporizador actual
+            this.iniciarTemporizador(); // Inicia el temporizador para el nuevo turno
+        }
+        
+    }
+
+    
 }
