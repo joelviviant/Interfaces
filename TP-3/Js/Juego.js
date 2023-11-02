@@ -86,6 +86,9 @@ class Juego {
     }
 
     inicializarJuego() {   
+        this.drawFichas();
+        this.inicializarFichas();
+        this.reiniciarJuego();
         this.iniciarTemporizador(); 
     }
     
