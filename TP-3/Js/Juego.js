@@ -51,7 +51,9 @@ class Juego {
                 clearInterval(this.tiempoID);
                 this.tiempoRestante = 0; // Asegura que el tiempo no sea negativo
                 this.dibujarTemporizador();
-                this.colocarFichaAleatoria(this.jugadorActual); // Agrega esta línea
+                
+                // Cambiar el turno del jugador aquí
+                this.siguienteTurno();
             }
         }, 1000);
     }
