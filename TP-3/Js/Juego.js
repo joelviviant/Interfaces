@@ -7,12 +7,12 @@ class Juego {
         this.juegoEnCurso = true;
         this.fichas = [];
         this.fichasEnJuego = [];
-        this.tiempoRestante = 30; // Tiempo inicial en segundos
-        this.tiempoID = null; // Identificador del temporizador
-        this.tiempoX = 400; // Posición X del temporizador en el canvas
-        this.tiempoY = 50; // Posición Y del temporizador en el canvas
-        this.restartX = 750; // Posición X del RESTART en el canvas
-        this.restartY = 20; // Posición Y del RESTART en el canvas
+        this.tiempoRestante = 30; 
+        this.tiempoID = null; 
+        this.tiempoX = 400; 
+        this.tiempoY = 50; 
+        this.restartX = 750;
+        this.restartY = 20; 
         this.inicializarFichas();
         
     }
@@ -49,10 +49,8 @@ class Juego {
     
             if (this.tiempoRestante <= 0) {
                 clearInterval(this.tiempoID);
-                this.tiempoRestante = 0; // Asegura que el tiempo no sea negativo
+                this.tiempoRestante = 0; 
                 this.dibujarTemporizador();
-                
-                // Cambiar el turno del jugador aquí
                 this.siguienteTurno();
             }
         }, 1000);
@@ -81,7 +79,7 @@ class Juego {
 
     
 
-    anunciarGanador(ganador, fichasGanadoras) {
+    anunciarGanador(ganador) {
         console.log("El ganador es: " + ganador.nombre);
         this.detenerTemporizador();
        
@@ -105,12 +103,9 @@ class Juego {
     limpiarFichasEnJuego() {
         for (let i = 0; i < this.fichasEnJuego.length; i++) {
             let ficha = this.fichasEnJuego[i];
-            // Borra la ficha del canvas
             this.context.clearRect(ficha.x - ficha.radius, ficha.y - ficha.radius, ficha.radius * 2, ficha.radius * 2);
         }
-        this.fichasEnJuego = [];  // Limpia el registro de fichas en juego
-
-        // Además, elimina las fichas del array 'fichas'
+        this.fichasEnJuego = []; 
         this.fichas = this.fichas.filter(ficha => !ficha.colocada);
     }
   
@@ -118,32 +113,26 @@ class Juego {
     detenerTemporizador() {
         clearInterval(this.tiempoID);
         this.tiempoRestante = 30;
-        this.dibujarTemporizador(); // Dibuja el temporizador actualizado
+        this.dibujarTemporizador(); 
     }
 
     dibujarTemporizador() {
-        // Borra el área del canvas donde se muestra el temporizador
-        this.context.clearRect(this.tiempoX - 10, this.tiempoY - 30, 300, 60); // Borra más espacio para el nuevo texto
+        this.context.clearRect(this.tiempoX - 10, this.tiempoY - 30, 300, 60);
         this.context.fillStyle = "white";
         this.context.font = "20px Arial";
-    
-        // Formatear el tiempo restante a 2 cifras
         const tiempoFormateado = this.tiempoRestante < 10 ? `0${this.tiempoRestante}` : this.tiempoRestante;
-    
         this.context.fillText(`Tiempo restante: ${tiempoFormateado} segundos`, this.tiempoX, this.tiempoY);
-        
-        // Agregar texto del turno del jugador
         this.context.fillText(`Turno del Jugador: ${this.jugadorActual.nombre}`, this.tiempoX, this.tiempoY + 30);
     }
     siguienteTurno() {
         if (this.jugadorActual == this.jugadores[0]) {
             this.jugadorActual = this.jugadores[1];
-            this.detenerTemporizador(); // Detiene el temporizador actual
-            this.iniciarTemporizador(); // Inicia el temporizador para el nuevo turno
+            this.detenerTemporizador(); 
+            this.iniciarTemporizador(); 
         } else if (this.jugadorActual == this.jugadores[1]) {
             this.jugadorActual = this.jugadores[0];
-            this.detenerTemporizador(); // Detiene el temporizador actual
-            this.iniciarTemporizador(); // Inicia el temporizador para el nuevo turno
+            this.detenerTemporizador(); 
+            this.iniciarTemporizador(); 
         }
         
     }

@@ -29,7 +29,6 @@ let juego = new Juego(tablero, jugador1, jugador2, context);
 
 let startButton = document.getElementById('startButton');
 startButton.addEventListener('click', () => {
-    // Lógica para comenzar el juego
     juego.inicializarJuego();
     juego.dibujarTemporizador();
 });

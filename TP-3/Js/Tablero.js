@@ -8,8 +8,6 @@ class Tablero {
         this.canvasWidth = canvasWidth;
         this.canvasHeight = canvasHeight;
         this.tablero = [];
-
-        //Inicializa la Matriz del tablero
         for(let fila = 0; fila < this.filas; fila++) {
             this.tablero[fila] = [];
             for(let columna = 0; columna < this.columnas; columna++) {
@@ -158,6 +156,6 @@ reiniciarJuego() {
             this.tablero[fila][columna] = 0;
         }
     }
-    this.draw(); // Vuelve a dibujar el tablero
+    this.draw(); 
 }
 }
