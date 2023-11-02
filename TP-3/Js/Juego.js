@@ -81,10 +81,11 @@ class Juego {
 
     anunciarGanador(ganador, fichasGanadoras) {
         console.log("El ganador es: " + ganador.nombre);
+        this.detenerTemporizador();
        
     }
-    inicializarJuego() {
-        
+
+    inicializarJuego() {   
         this.iniciarTemporizador(); 
     }
     
