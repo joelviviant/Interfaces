@@ -64,7 +64,7 @@ let restartButton = document.getElementById('restartButton');
 restartButton.addEventListener('click', () => {
     juego.detenerTemporizador();
     juego.reiniciarJuego();
-    
+    document.querySelector('.juego-config').classList.toggle('ocultar');    
 });
 
 function jugar(modoJuego) {
