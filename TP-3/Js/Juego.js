@@ -85,7 +85,10 @@ class Juego {
     anunciarGanador(ganador) {
         console.log("El ganador es: " + ganador.nombre);
         this.detenerTemporizador();
-       
+        const elementoGanador = document.querySelector('.ganador');
+        elementoGanador.textContent = "El ganador es " + ganador.nombre;
+        const mostrarGanador = document.querySelector('.mostrar-ganador');
+        mostrarGanador.classList.toggle('ganador');
     }
 
     inicializarJuego() {   

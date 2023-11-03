@@ -64,7 +64,8 @@ let restartButton = document.getElementById('restartButton');
 restartButton.addEventListener('click', () => {
     juego.detenerTemporizador();
     juego.reiniciarJuego();
-    document.querySelector('.juego-config').classList.toggle('ocultar');    
+    document.querySelector('.juego-config').classList.toggle('ocultar'); 
+    document.querySelector('.mostrar-ganador').classList.remove('ganador');    
 });
 
 function jugar(modoJuego) {

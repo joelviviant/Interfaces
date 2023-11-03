@@ -579,6 +579,23 @@ nav{
     right: 0;
     background-color: #FF4593 ;
   }
+  .mostrar-ganador{
+    display: none;
+  }
+  .ganador{
+    color: #FF9900;
+    font-size: 50px;
+    width: 1080px;
+    height: 720px;
+    position: absolute;
+    z-index: 1;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
   
   .juego-config {
     width: 1080px;
