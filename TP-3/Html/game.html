@@ -121,10 +121,30 @@
             </svg>
         </div>
         <div class="bts-game">
-            <button id="startButton">Comenzar Juego</button>
             <button id="restartButton">Reiniciar Juego</button>
         </div>
         <div class="juego">
+            <div class="juego-config">
+                <div class="juego-eleccion-fichas">
+                    <div class="fichas-j1">
+                        <div class="ficha" style="background: red;" onclick="seleccionarFichaJ1(this.style.background, this)"></div>
+                        <div class="ficha" style="background: blue;" onclick="seleccionarFichaJ1(this.style.background, this)"></div>
+                        <div class="ficha" style="background: green;" onclick="seleccionarFichaJ1(this.style.background, this)"></div>
+                        <div class="ficha" style="background: yellow;" onclick="seleccionarFichaJ1(this.style.background, this)"></div>
+                    </div>
+                    <div class="fichas-j2">
+                        <div class="ficha" style="background: red;" onclick="seleccionarFichaJ2(this.style.background, this)"></div>
+                        <div class="ficha" style="background: blue;" onclick="seleccionarFichaJ2(this.style.background, this)"></div>
+                        <div class="ficha" style="background: green;" onclick="seleccionarFichaJ2(this.style.background, this)"></div>
+                        <div class="ficha" style="background: yellow;" onclick="seleccionarFichaJ2(this.style.background, this)"></div>
+                    </div>
+                </div>
+                <div class="juego-btns-modojuego">
+                    <button class="btn-modo-juego" value="4">4 En Línea</button>
+                    <button class="btn-modo-juego" value="5">5 En Línea</button>
+                    <button class="btn-modo-juego" value="6">6 En Línea</button>
+                </div>
+            </div>
             <canvas id="canvas" width="1080" height="720"></canvas>
         </div>
         <div class="juego-fotos">

@@ -6,15 +6,13 @@ class Juego {
         this.context = context;
         this.juegoEnCurso = true;
         this.fichas = [];
-        this.fichasEnJuego = [];
         this.tiempoRestante = 30; 
-        this.tiempoID = null; 
+        this.tiempoID = null;
         this.tiempoX = 400; 
         this.tiempoY = 50; 
         this.restartX = 750;
         this.restartY = 20; 
         this.inicializarFichas();
-        
     }
     
     inicializarFichas() {
@@ -64,15 +62,20 @@ class Juego {
             let posicion = this.tablero.colocarFicha(columna, this.jugadorActual);
             if (posicion) {
                 lastClickedFicha.setPosition(posicion.x, posicion.y);
-                lastClickedFicha.colocada = true;
-                this.fichasEnJuego.push(lastClickedFicha);                
+                lastClickedFicha.colocada = true;          
                 if(this.tablero.alineoCuatro(posicion.fila, columna, this.jugadorActual)) {
                     this.anunciarGanador(this.jugadorActual);
+                    this.juegoEnCurso = false;
+                    this.reiniciarJuego();
+                } else if(this.tablero.tableroLleno()) {
+                    console.log("Empate");
                     this.juegoEnCurso = false;
                     this.reiniciarJuego();
                 } else {
                     this.siguienteTurno();
                 }
+            } else {
+                lastClickedFicha.setPosition(lastClickedFicha.xIni, lastClickedFicha.yIni);
             }
         }
     }
@@ -103,16 +106,6 @@ class Juego {
         this.drawFichas();
     }
 
-    limpiarFichasEnJuego() {
-        for (let i = 0; i < this.fichasEnJuego.length; i++) {
-            let ficha = this.fichasEnJuego[i];
-            this.context.clearRect(ficha.x - ficha.radius, ficha.y - ficha.radius, ficha.radius * 2, ficha.radius * 2);
-        }
-        this.fichasEnJuego = []; 
-        this.fichas = this.fichas.filter(ficha => !ficha.colocada);
-    }
-  
-
     detenerTemporizador() {
         clearInterval(this.tiempoID);
         this.tiempoRestante = 30;
@@ -140,5 +133,12 @@ class Juego {
         
     }
 
-    
+    reiniciarJuego() {
+        setTimeout(() => {
+            this.fichas = [];
+            this.inicializarFichas();
+            this.tablero.reiniciarTablero();
+            this.juegoEnCurso = true;
+        }, 1000);
+    }
 }

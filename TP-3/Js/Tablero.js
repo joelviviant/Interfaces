@@ -7,6 +7,8 @@ class Tablero {
         this.context = context;
         this.canvasWidth = canvasWidth;
         this.canvasHeight = canvasHeight;
+        this.condVictoria = 0;
+        this.cambiarModoDeJuego();
         this.tablero = [];
         for(let fila = 0; fila < this.filas; fila++) {
             this.tablero[fila] = [];
@@ -56,12 +58,11 @@ class Tablero {
     }
 
     alineoCuatro(fila, columna, jugadorActual) {
-        // Verificar horizontal
         let count = 0;
         for(let c = 0; c < this.columnas; c++) {
             if(this.tablero[fila][c] === jugadorActual) {
                 count++;
-                if(count >= 4) {
+                if(count >= this.condVictoria) {
                     return true;
                 }
             } else {
@@ -69,12 +70,11 @@ class Tablero {
             }
         }
 
-        // Verificar vertical
         count = 0;
         for(let f = 0; f < this.filas; f++) {
             if(this.tablero[f][columna] === jugadorActual) {
                 count++;
-                if(count >= 4) {
+                if(count >= this.condVictoria) {
                     return true;
                 }
             } else {
@@ -82,86 +82,75 @@ class Tablero {
             }
         }
 
-        // Verificar diagonal descendente (/)
-    count = 0;
-    let startF = Math.max(fila - 3, 0);
-    let startC = Math.max(columna - 3, 0);
-    for (let f = startF, c = startC; f < this.filas && c < this.columnas; f++, c++) {
-        if (this.tablero[f][c] === jugadorActual) {
-            count++;
-            if (count >= 4) {
-                return true;
-            }
-        } else {
-            count = 0;
-        }
-    }
-    // Verificar diagonal descendente (\)
-count = 0;
-startF = Math.max(fila - 3, 0);
-startC = Math.max(columna - 3, 0);
-for (let f = startF, c = startC; f < this.filas && c < this.columnas; f++, c++) {
-    if (this.tablero[f][c] === jugadorActual) {
-        count++;
-        if (count >= 4) {
-            return true;
-        }
-    } else {
         count = 0;
-    }
-}
-
-    // Verificar diagonal ascendente (\)
-    count = 0;
-    startF = Math.min(fila + 3, this.filas - 1);
-    startC = Math.max(columna - 3, 0);
-    for (let f = startF, c = startC; f >= 0 && c < this.columnas; f--, c++) {
-        if (this.tablero[f][c] === jugadorActual) {
-            count++;
-            if (count >= 4) {
-                return true;
+        for (let i = -(this.condVictoria - 1); i <= this.condVictoria - 1; i++) {
+            if (
+                fila + i >= 0 &&
+                fila + i < this.filas &&
+                columna + i >= 0 &&
+                columna + i < this.columnas &&
+                this.tablero[fila + i][columna + i] === jugadorActual
+            ) {
+                count++;
+                if (count >= this.condVictoria) {
+                    return true;
+                }
+            } else {
+                count = 0;
             }
-        } else {
-            count = 0;
         }
-    }
 
-    // Verificar diagonal ascendente (/)
-    count = 0;
-    startF = Math.max(fila - 3, 0);
-    startC = Math.min(columna + 3, this.columnas - 1);
-    for (let f = startF, c = startC; f < this.filas && c >= 0; f++, c--) {
-        if (this.tablero[f][c] === jugadorActual) {
-            count++;
-            if (count >= 4) {
-                return true;
+        count = 0;
+        for (let i = -(this.condVictoria - 1); i <= this.condVictoria - 1; i++) {
+            if (
+                fila - i >= 0 &&
+                fila - i < this.filas &&
+                columna + i >= 0 &&
+                columna + i < this.columnas &&
+                this.tablero[fila - i][columna + i] === jugadorActual
+            ) {
+                count++;
+                if (count >= this.condVictoria) {
+                    return true;
+                }
+            } else {
+                count = 0;
             }
-        } else {
-            count = 0;
         }
+
+        return false;
     }
 
-    return false;
-}
+    reiniciarTablero() {
+        setTimeout(() => {
+            for(let fila = 0; fila < this.filas; fila++) {
+                this.tablero[fila] = [];
+                for(let columna = 0; columna < this.columnas; columna++) {
+                    this.tablero[fila][columna] = 0;
+                }
+            };
+        }, 1000);
+    }
 
-limpiarFichas() {
-    this.fichas = [];
-    this.drawFichas();
-}
+    tableroLleno() {
+        for(let fila = 0; fila < this.filas; fila++) {
+            for(let columna = 0; columna < this.columnas; columna++) {
+                if(this.tablero[fila][columna] === 0) {
+                    return false;
+                }
+            }
+        }
 
-reiniciarJuego() {
-    this.tablero.reiniciarTablero();
-    this.limpiarFichas();
+        return true;
+    }
 
-    setTimeout(() => {
-        this.juegoEnCurso = true;
-    }, 3000);
-}reiniciarTablero() {
-    for (let fila = 0; fila < this.filas; fila++) {
-        for (let columna = 0; columna < this.columnas; columna++) {
-            this.tablero[fila][columna] = 0;
+    cambiarModoDeJuego() {
+        if(this.filas == 6 && this.columnas == 7) {
+            this.condVictoria = 4;
+        } else if(this.filas == 7 && this.columnas == 8) {
+            this.condVictoria = 5;
+        } else if(this.filas == 8 && this.columnas == 9) {
+            this.condVictoria = 6;
         }
     }
-    this.draw(); 
-}
 }

@@ -580,3 +580,60 @@ nav{
     background-color: #FF4593 ;
   }
   
+  .juego-config {
+    width: 1080px;
+    height: 720px;
+    position: absolute;
+    z-index: 1;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+    .ocultar {
+        display: none;
+    }
+
+.juego-btns-modojuego {
+    display: flex;
+    width: 500px;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.juego-btns-modojuego button {
+    padding: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+    background: #ADFF45;
+}
+
+.juego-eleccion-fichas {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+
+.juego-eleccion-fichas .fichas-j1, .fichas-j2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    justify-content: center;
+}
+
+.juego-eleccion-fichas .ficha {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    margin: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+    .seleccionada {
+        opacity: .5;
+    }

@@ -16,22 +16,49 @@ function clearCanvas() {
 context.fillStyle = "grey";
 context.fillRect(0, 0, canvasWidth, canvasHeight);
 
-//Se crea tablero y se lo dibuja
-let tablero = new Tablero(6, 7, 80, "white", context, canvasWidth, canvasHeight);
-tablero.draw();
+//Configuracion del juego
+let juego;
+let fichaj1;
+let fichaj2;
+let fichasJ1 = document.querySelectorAll('.fichas-j1 .ficha');
+let fichasJ2 = document.querySelectorAll('.fichas-j2 .ficha');
 
-//Se crean Jugadores
-let jugador1 = new Jugador("Juan", "red");
-let jugador2 = new Jugador("Oscar", "blue");
-
-//Se crea el Juego
-let juego = new Juego(tablero, jugador1, jugador2, context);
-
-let startButton = document.getElementById('startButton');
-startButton.addEventListener('click', () => {
-    juego.inicializarJuego();
-    juego.dibujarTemporizador();
+let botones = document.querySelectorAll('.btn-modo-juego');
+botones.forEach(boton => {
+    boton.addEventListener('click', () => {
+        document.querySelector('.juego-config').classList.add('ocultar');
+        let modoJuego = boton.value;
+        jugar(modoJuego);
+    })
 });
+
+function seleccionarFichaJ1(fichaColor, ficha) {
+    fichaj1 = fichaColor;
+    quitarSeleccionFichasJ1(ficha);
+    ficha.classList.add('seleccionada');
+}
+
+function quitarSeleccionFichasJ1(fichaSeleccionada) {
+    fichasJ1.forEach((ficha) => {
+        if(ficha !== fichaSeleccionada && ficha.classList.contains('seleccionada')) {
+            ficha.classList.remove('seleccionada');
+        }
+    });
+}
+
+function seleccionarFichaJ2(fichaColor, ficha) {
+    fichaj2 = fichaColor;
+    quitarSeleccionFichasJ2(ficha);
+    ficha.classList.add('seleccionada');
+}
+
+function quitarSeleccionFichasJ2(fichaSeleccionada) {
+    fichasJ2.forEach((ficha) => {
+        if(ficha !== fichaSeleccionada && ficha.classList.contains('seleccionada')) {
+            ficha.classList.remove('seleccionada');
+        }
+    });
+}
 
 let restartButton = document.getElementById('restartButton');
 restartButton.addEventListener('click', () => {
@@ -39,6 +66,29 @@ restartButton.addEventListener('click', () => {
     juego.reiniciarJuego();
     
 });
+
+function jugar(modoJuego) {
+    let jugador1;
+    let jugador2;
+    if(fichaj1 != null && fichaj2 != null) {
+        jugador1 = new Jugador("Jugador1", fichaj1);
+        jugador2 = new Jugador("Jugador2", fichaj2);
+    } else {
+        jugador1 = new Jugador("Jugador1", "red");
+        jugador2 = new Jugador("Jugador2", "blue");
+    }
+
+    if(modoJuego == 4) {
+        tablero = new Tablero(6, 7, 80, "white", context, canvasWidth, canvasHeight);
+        juego = new Juego(tablero, jugador1, jugador2, context);
+    } else if(modoJuego == 5) {
+        tablero = new Tablero(7, 8, 80, "white", context, canvasWidth, canvasHeight);
+        juego = new Juego(tablero, jugador1, jugador2, context);
+    } else if(modoJuego == 6) {
+        tablero = new Tablero(8, 9, 80, "white", context, canvasWidth, canvasHeight);
+        juego = new Juego(tablero, jugador1, jugador2, context);
+    }
+}
 
 
 //Eventos de Mouse

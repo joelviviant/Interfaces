@@ -3,6 +3,8 @@ class Ficha {
         this.context = context;
         this.x = x;
         this.y = y;
+        this.xIni = x;
+        this.yIni = y;
         this.radius = radius;
         this.color = color;
         this.jugador = jugador;
