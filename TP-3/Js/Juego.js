@@ -16,11 +16,11 @@ class Juego {
     }
     
     inicializarFichas() {
-        for(let i = 0; i < 21; i++) {
+        for(let i = 0; i < 72; i++) {
             let fichaJ1 = new Ficha(this.context, 50, 50, 30, this.jugadores[0].color, this.jugadores[0]);
             this.fichas.push(fichaJ1);
         }
-        for(let i = 0; i < 21; i++) {
+        for(let i = 0; i < 72; i++) {
             let fichaJ2 = new Ficha(this.context, 1000, 50, 30, this.jugadores[1].color, this.jugadores[1]);
             this.fichas.push(fichaJ2);
         }
