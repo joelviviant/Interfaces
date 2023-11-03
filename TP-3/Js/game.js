@@ -20,7 +20,7 @@ function cerrarPopCompartir() {
 }
 
 //Carrousel Imagenes Del Juego
-let cardWidth = 310;
+let cardWidth = 280;
 let seccionCarrousel = 0;
 
 function slideImagenesIzq(btnIzq) {

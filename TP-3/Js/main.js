@@ -139,7 +139,7 @@ function onMouseUp(e) {
         let offsetX = e.clientX - rect.left;
 
         let columna = Math.floor((offsetX - (canvasWidth - tablero.columnas * tablero.tamanioCelda) / 2) / tablero.tamanioCelda);
-    
+
         juego.colocarFicha(columna, lastClickedFicha);
     }
 

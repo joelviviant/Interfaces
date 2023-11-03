@@ -103,6 +103,7 @@ nav{
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s; 
+    margin-left: 80px;
   }
     
   .bts-game button:hover {
@@ -263,7 +264,7 @@ nav{
   position: fixed;
   top: 30%;
   left: 35%;
-  z-index: 1;
+  z-index: 2;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -336,6 +337,7 @@ nav{
   width: 1090px;
   height: 730px;
   border: 5px solid #ADFF45;
+  margin: auto;
 }
 
 .juego img {
@@ -345,11 +347,11 @@ nav{
 
 /*Imagenes del juego*/
 .juego-fotos {
-  width: 1205px;
+  width: 1080px;
   height: 250px;
-  margin: auto;
   overflow: hidden;
   position: relative;
+  margin: auto;
 }
 
 .carrousel-imagenes {
@@ -359,7 +361,7 @@ nav{
 }
 
 .carrousel-imagenes img {
-  min-width: 275px;
+  min-width: 245px;
   height: 250px;
   border: 3px solid #ADFF45;
 }
@@ -627,6 +629,12 @@ nav{
     cursor: pointer;
     width: 100px;
     background: #ADFF45;
+    transition: background-color .3s, transform .3s;
+}
+
+.juego-btns-modojuego button:hover {
+  background: #FF9900;
+  transform: scale(1.2);
 }
 
 .juego-eleccion-fichas {
@@ -649,8 +657,13 @@ nav{
     margin: 10px;
     cursor: pointer;
     box-sizing: border-box;
+    transition: opacity .3s, transform .3s;
 }
 
     .seleccionada {
         opacity: .5;
     }
+
+.juego-eleccion-fichas .ficha:hover {
+  transform: scale(1.1);
+}
