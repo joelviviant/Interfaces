@@ -123,23 +123,26 @@
         <div class="bts-game">
             <button id="restartButton">Reiniciar Juego</button>
         </div>
-        <div class="juego">
+            <div class="juego">
             <div class="mostrar-ganador">
                 <h1 class="ganador">El ganador es</h1>
+            </div>
+            <div class="mostrar-empate">
+                <h1 class="empate"></h1>
             </div>
             <div class="juego-config">
                 <div class="juego-eleccion-fichas">
                     <div class="fichas-j1">
-                        <div class="ficha" style="background: red;" onclick="seleccionarFichaJ1(this.style.background, this)"></div>
-                        <div class="ficha" style="background: blue;" onclick="seleccionarFichaJ1(this.style.background, this)"></div>
-                        <div class="ficha" style="background: green;" onclick="seleccionarFichaJ1(this.style.background, this)"></div>
-                        <div class="ficha" style="background: yellow;" onclick="seleccionarFichaJ1(this.style.background, this)"></div>
+                        <img class="ficha" id="pj1" src="../Images/caruso.jpg" alt="Ficha Jugador 1" data-value="../Images/caruso.jpg" onclick="seleccionarFichaJ1(this)">
+                        <img class="ficha" src="../Images/garcia.png" alt="Ficha Jugador 1" data-value="../Images/garcia.png" onclick="seleccionarFichaJ1(this)">
+                        <img class="ficha" src="../Images/personaje.png" alt="Ficha Jugador 1"data-value="../Images/personaje.png" onclick="seleccionarFichaJ1(this)">
+                        <img class="ficha" src="../Images/policia.png" alt="Ficha Jugador 1" data-value="../Images/policia.png" onclick="seleccionarFichaJ1(this)">
                     </div>
                     <div class="fichas-j2">
-                        <div class="ficha" style="background: red;" onclick="seleccionarFichaJ2(this.style.background, this)"></div>
-                        <div class="ficha" style="background: blue;" onclick="seleccionarFichaJ2(this.style.background, this)"></div>
-                        <div class="ficha" style="background: green;" onclick="seleccionarFichaJ2(this.style.background, this)"></div>
-                        <div class="ficha" style="background: yellow;" onclick="seleccionarFichaJ2(this.style.background, this)"></div>
+                        <img class="ficha" src="../Images/caruso.jpg" alt="Ficha Jugador 2" data-value="../Images/caruso.jpg"  onclick="seleccionarFichaJ2(this)">
+                        <img class ="ficha" id="pj2" src="../Images/garcia.png" alt="Ficha Jugador 2" data-value="../Images/garcia.png"  onclick="seleccionarFichaJ2(this)">
+                        <img class="ficha" src="../Images/policia.png" alt="Ficha Jugador 2" data-value="../Images/policia.png"onclick="seleccionarFichaJ2(this)">
+                        <img class ="ficha" src="../Images/personaje.png" alt="Ficha Jugador 2" data-value="../Images/personaje.png" onclick="seleccionarFichaJ2(this)">
                     </div>
                 </div>
                 <div class="juego-btns-modojuego">

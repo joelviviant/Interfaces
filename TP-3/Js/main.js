@@ -32,11 +32,20 @@ botones.forEach(boton => {
     })
 });
 
-function seleccionarFichaJ1(fichaColor, ficha) {
-    fichaj1 = fichaColor;
+function selectDefault(){
+    let pj1 = document.getElementById('pj1');
+    let pj2 = document.getElementById('pj2');
+    seleccionarFichaJ1(pj1);
+    seleccionarFichaJ2(pj2);
+}
+selectDefault();
+
+function seleccionarFichaJ1(ficha) {
+    fichaj1 = ficha.getAttribute("data-value"); // Obtén la ruta de la imagen del atributo "data-value"
     quitarSeleccionFichasJ1(ficha);
     ficha.classList.add('seleccionada');
-}
+    console.log(fichaj1)
+}  
 
 function quitarSeleccionFichasJ1(fichaSeleccionada) {
     fichasJ1.forEach((ficha) => {
@@ -46,10 +55,11 @@ function quitarSeleccionFichasJ1(fichaSeleccionada) {
     });
 }
 
-function seleccionarFichaJ2(fichaColor, ficha) {
-    fichaj2 = fichaColor;
+function seleccionarFichaJ2(ficha) {
+    fichaj2 = ficha.getAttribute("data-value"); // Obtén la ruta de la imagen del atributo "data-value"
     quitarSeleccionFichasJ2(ficha);
     ficha.classList.add('seleccionada');
+    console.log(fichaj2)
 }
 
 function quitarSeleccionFichasJ2(fichaSeleccionada) {
@@ -65,6 +75,7 @@ restartButton.addEventListener('click', () => {
     juego.detenerTemporizador();
     juego.reiniciarJuego();
     document.querySelector('.juego-config').classList.toggle('ocultar'); 
+    document.querySelector('.mostrar-empate').classList.remove('empate');    
     document.querySelector('.mostrar-ganador').classList.remove('ganador');    
 });
 
@@ -75,7 +86,7 @@ function jugar(modoJuego) {
         jugador1 = new Jugador("Jugador1", fichaj1);
         jugador2 = new Jugador("Jugador2", fichaj2);
     } else {
-        jugador1 = new Jugador("Jugador1", "red");
+        jugador1 = new Jugador("Jugador1", "../Images/caruso.jpg");
         jugador2 = new Jugador("Jugador2", "blue");
     }
 

@@ -720,7 +720,6 @@ nav{
     align-items: center;
     gap: 1em;
 }
-
 .card-title{
   margin-top: 25px;
   display: flex;
@@ -899,7 +898,7 @@ nav{
     text-decoration: none;
     color: black;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-left: 1000px;
     padding: 10px;
     background-color: #ADFF45;
@@ -908,6 +907,10 @@ nav{
   
   .custom-block a:hover {
     color: #FF4593;
+    width: 120px;
+    border-radius: 20px;
+    border-style: outset;
+
   }
 /*ESTILOS PARA EL FOOTER*/
 

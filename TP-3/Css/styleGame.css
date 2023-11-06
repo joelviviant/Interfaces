@@ -335,7 +335,7 @@ nav{
 
 .juego {
   width: 1090px;
-  height: 730px;
+  height: 800px;
   border: 5px solid #ADFF45;
   margin: auto;
 }
@@ -598,6 +598,23 @@ nav{
     align-items: center;
     gap: 30px;
   }
+  .mostrar-empate{
+    display: none;
+  }
+  .empate{
+    color: #FF9900;
+    font-size: 50px;
+    width: 1080px;
+    height: 720px;
+    position: absolute;
+    z-index: 1;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
   
   .juego-config {
     width: 1080px;
@@ -657,11 +674,11 @@ nav{
     margin: 10px;
     cursor: pointer;
     box-sizing: border-box;
-    transition: opacity .3s, transform .3s;
+    transition: transform .3s;
 }
 
     .seleccionada {
-        opacity: .5;
+        border: #FF9900 5px solid;
     }
 
 .juego-eleccion-fichas .ficha:hover {
