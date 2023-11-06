@@ -9,7 +9,7 @@ class Juego {
         this.tiempoRestante = 30; 
         this.tiempoID = null;
         this.tiempoX = 400; 
-        this.tiempoY = 50; 
+        this.tiempoY = 15; 
         this.restartX = 750;
         this.restartY = 20; 
         this.inicializarFichas();
@@ -118,10 +118,10 @@ class Juego {
     dibujarTemporizador() {
         this.context.clearRect(this.tiempoX - 10, this.tiempoY - 30, 300, 60);
         this.context.fillStyle = "white";
-        this.context.font = "20px Arial";
+        this.context.font = "15px Arial";
         const tiempoFormateado = this.tiempoRestante < 10 ? `0${this.tiempoRestante}` : this.tiempoRestante;
         this.context.fillText(`Tiempo restante: ${tiempoFormateado} segundos`, this.tiempoX, this.tiempoY);
-        this.context.fillText(`Turno del Jugador: ${this.jugadorActual.nombre}`, this.tiempoX, this.tiempoY + 30);
+        this.context.fillText(`Turno del Jugador: ${this.jugadorActual.nombre}`, this.tiempoX, this.tiempoY + 20);
     }
     siguienteTurno() {
         if (this.jugadorActual == this.jugadores[0]) {
