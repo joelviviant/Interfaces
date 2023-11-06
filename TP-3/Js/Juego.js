@@ -12,73 +12,34 @@ class Juego {
         this.tiempoY = 15; 
         this.restartX = 750;
         this.restartY = 20; 
-        this.inicializarJuego();
+        this.inicializarFichas();
     }
     
     inicializarFichas() {
-        for(let i = 0; i < 72; i++) {
-        // Carga las imágenes de las fichas elegidas por los jugadores
-        let fichaJ1 = new Ficha(
-            this.context,
-            50,
-            50,
-            60,
-            60,
-            fichaj1, 
-            this.jugadores[0]
-        )
-        this.fichas.push(fichaJ1);
-        };
-        for(let i = 0; i < 72; i++) {
-        let fichaJ2 = new Ficha(
-            this.context,
-            1000,
-            50,
-            60,
-            60,
-            fichaj2,
-            this.jugadores[1]
-        )
-        this.fichas.push(fichaJ2);
-        };
-    
-        
+        for(let i = 0; i < 36; i++) {
+            let fichaJ1 = new Ficha(this.context, 50, 50, 35, this.jugadores[0].ficha, this.jugadores[0]);
+            this.fichas.push(fichaJ1);
+        }
+        for(let i = 0; i < 36; i++) {
+            let fichaJ2 = new Ficha(this.context, 1000, 50, 35, this.jugadores[1].ficha, this.jugadores[1]);
+            this.fichas.push(fichaJ2);
+        }
         this.drawFichas();
-       
     }
    
     drawFichas() {
         clearCanvas();
         this.context.fillStyle = "black";
         this.context.fillRect(0, 0, canvasWidth, canvasHeight);
-    
+
         this.tablero.draw();
-    
-        for (let i = 0; i < this.fichas.length; i++) {
-            const ficha = this.fichas[i];
-            if (this.jugadorActual === ficha.jugador) {
-                this.context.save();
-                this.context.strokeStyle = "yellow";
-                this.context.lineWidth = 3;
-                this.context.beginPath();
-                this.context.arc(
-                    ficha.x + ficha.width / 2, // Centro X del círculo
-                    ficha.y + ficha.height / 2, 
-                    ficha.width / 2 + 2, 
-                    0, 
-                    Math.PI * 2 
-                );
-                this.context.stroke();
-                this.context.restore();
-            }
-            ficha.draw();
-            this.context.strokeStyle = "black"; // Restablece el color del borde a negro
+        for(let i = 0; i < this.fichas.length; i++) {
+            this.fichas[i].draw();
         }
     }
  
     iniciarTemporizador() {
         this.tiempoRestante = 30;
-        this.drawFichas();
         this.dibujarTemporizador();
         this.tiempoID = setInterval(() => {
             this.tiempoRestante--;
@@ -92,26 +53,21 @@ class Juego {
             }
         }, 1000);
     }
-   
-    
-
     
     colocarFicha(columna, lastClickedFicha) {
         if (this.juegoEnCurso) {
             let posicion = this.tablero.colocarFicha(columna, this.jugadorActual);
             if (posicion) {
-                let x = (columna + 0.5) * this.tablero.tamanioCelda + (this.tablero.canvasWidth - this.tablero.columnas * this.tablero.tamanioCelda) / 2 - lastClickedFicha.width / 2;
-                let y = (posicion.fila + 0.5) * this.tablero.tamanioCelda + (this.tablero.canvasHeight - this.tablero.filas * this.tablero.tamanioCelda) / 2 - lastClickedFicha.height / 2;
-                lastClickedFicha.setPosition(x, y);
-                lastClickedFicha.colocada = true;     
+                lastClickedFicha.setPosition(posicion.x, posicion.y);
+                lastClickedFicha.colocada = true;  
                 if(this.tablero.alineoCuatro(posicion.fila, columna, this.jugadorActual)) {
                     this.anunciarGanador(this.jugadorActual);
                     this.juegoEnCurso = false;
                     this.reiniciarJuego();
-                } else if(!this.tablero.tableroLleno()) {
-                    this.mostrarEmpate();
-                    this.juegoEnCurso = false;
-                    this.reiniciarJuego();
+                } else if(this.tablero.tableroLleno()) {
+                        this.mostrarEmpate();
+                        this.juegoEnCurso = false;
+                        this.reiniciarJuego();
                 } else {
                     this.siguienteTurno();
                 }
@@ -130,25 +86,26 @@ class Juego {
     }
 
     anunciarGanador(ganador) {
-        this.detenerTemporizador();
-        const elementoGanador = document.querySelector('.ganador');
-        elementoGanador.textContent = "El ganador es " + ganador.nombre;
-        const mostrarGanador = document.querySelector('.mostrar-ganador');
-        mostrarGanador.classList.toggle('ganador');
+        setTimeout(() => {
+            console.log("El ganador es: " + ganador.nombre);
+            this.detenerTemporizador();
+            const elementoGanador = document.querySelector('.ganador');
+            elementoGanador.textContent = "El ganador es " + ganador.nombre;
+            const mostrarGanador = document.querySelector('.mostrar-ganador');
+            mostrarGanador.classList.toggle('ganador');
+        }, 500);
     }
 
-    inicializarJuego() {
-        this.inicializarFichas();
+    inicializarJuego() {   
         this.drawFichas();
+        this.inicializarFichas();
         this.reiniciarJuego();
         this.iniciarTemporizador(); 
     }
+    
    
     reiniciarJuego() {
-        this.limpiarFichasEnJuego();
         this.tablero.reiniciarTablero();
-        this.resetearBordesFichas();
-        this.fichasGanadoras = [];
         this.detenerTemporizador();
         this.iniciarTemporizador();
         this.drawFichas();
@@ -163,7 +120,7 @@ class Juego {
     dibujarTemporizador() {
         this.context.clearRect(this.tiempoX - 10, this.tiempoY - 30, 300, 60);
         this.context.fillStyle = "white";
-        this.context.font = "20px Arial";
+        this.context.font = "15px Arial";
         const tiempoFormateado = this.tiempoRestante < 10 ? `0${this.tiempoRestante}` : this.tiempoRestante;
         this.context.fillText(`Tiempo restante: ${tiempoFormateado} segundos`, this.tiempoX, this.tiempoY);
         this.context.fillText(`Turno del Jugador: ${this.jugadorActual.nombre}`, this.tiempoX, this.tiempoY + 20);
