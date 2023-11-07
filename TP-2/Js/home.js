@@ -1,6 +1,6 @@
 "use strict";
 
-let cardWidth = 260;
+let cardWidth = 210;
 let seccionCarrousel = 0;
 
 function slideIzq(btnIzq) {
@@ -26,6 +26,7 @@ function slideDer(btnDer) {
     let carrousel = aux.firstElementChild;
     carrousel.style.transform = `translateX(${slide}px)`;
 }
+
 document.body.classList.add('no-scroll', 'preloader-active');
 
 const preloader = document.querySelector('.preloader');
