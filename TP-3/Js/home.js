@@ -46,13 +46,3 @@ const interval = setInterval(function() {
   }
 }, 25);
 
-document.addEventListener("DOMContentLoaded", function () {
-  const mySwiper = new Swiper(".swiper-container", {
-    // Opciones de configuración aquí
-    loop: true, // Permite desplazarse de manera infinita
-    pagination: {
-      el: ".swiper-pagination", // Elemento de paginación
-    },
-  });
-});
-
