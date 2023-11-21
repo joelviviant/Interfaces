@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000000;
+    font-family: 'Lato', sans-serif;
+}
+
+/*HEADER*/
+header {
+    width: 100%;
+    height: 227px;
+    background: linear-gradient(to bottom, rgba(84, 153, 248, 1), rgba(84, 153, 248, 1), rgba(84, 153, 248, 1), rgba(84, 153, 248, 0));
+}
+
+header .container-header {
+    width: 1080px;
+    margin: auto;
+    position: relative;
+}
+
+.container-header .btn-menu {
+    width: 34px;
+    height: 26px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    cursor: pointer;
+}
+
+.btn-menu div {
+    width: 34px;   
+    padding: 2px;
+    background: #FFE901;
+    border: 4px solid #2981FF;
+    border-radius: 111px;
+    box-shadow: 4px 5px #02187E;
+}
+
+.container-header .btn-comprar {
+    background: #FFE901;
+    width: 200px;
+    height: 50px;
+    border-radius: 111px;
+    border: 8px solid #2982FF;
+    box-shadow: 4px 5px #02187E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    cursor: pointer;
+}
+
+.btn-comprar p {
+    color: #02187E;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 94.5%;
+    letter-spacing: 11%;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #02187E;
+}
+
+/*PORTADA*/
+.portada {
+    width: 100%;
+    height: 720px;
+    position: absolute;
+    top: 126px;
+}
+
+.portada .portada-background {
+    width: 100%;
+    height: 100%;
+}
+
+.container-portada {
+    width: 1080px;
+    margin: auto;
+    position: relative;
+    background: red;
+}
+
+.container-portada .logo {
+    position: absolute;
+    left: 230px;
+    top: -35px;
+}
+
+.portada .edificios-1 {
+    position: absolute;
+    width: 35.31%;
+    height: 100%;
+    left: -3.67%;
+    top: 2.5%;
+}
+
+.portada .edificios-2 {
+    position: absolute;
+    width: 42.46%;
+    height: 29.65%;
+    left: 30.62%;
+    top: 70.55%;
+}
+
+.portada .edificios-3 {
+    position: absolute;
+    width: 29.21%;
+    height: 101.04%;
+    left: 70.78%;
+    top: 0;
+}
+
+.container-portada .personaje-1 {
+    position: absolute;
+    left: -10px;
+    top: 262px;
+    z-index: 2;
+}
+
+.container-portada .personaje-2 {
+    position: absolute;
+    left: 293px;
+    top: 294px;
+    z-index: 2;
+}
+
+.container-portada .personaje-3 {
+    position: absolute;
+    left: 595px;
+    top: 209px;
+    z-index: 2;
+}
+
+/*CONTENIDO*/
+.seccion-1 {
+    width: 100%;
+    height: 844.5px;
+    position: absolute;
+    top: 774.5px;
+    z-index: 1;
+}
+
+.seccion-1 .seccion-1-background {
+    width: 100%;
+    height: 100%;
+}
+
+.container-seccion-1 {
+    width: 1080px;
+    height: 844.5px;
+    top: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.container-seccion-1 h1 {
+    font-size: 60px;
+    width: 646px;
+    height: auto;
+    line-height: 94.5%;
+    color: #FFFFFF;
+    position: absolute;
+    top: 219.5px;
+}
+
+.container-seccion-1 p {
+    font-size: 20px;
+    width: 586px;
+    height: 154px;
+    line-height: auto;
+    color: #FFFFFF;
+    position: absolute;
+    top: 357.5px;
+}
+
+.container-seccion-1-personaje {
+    width: 553px;
+    height: 921px;
+    position: absolute;
+    left: 612px;
+    top: 132.5px;
+}
+
+.container-seccion-1-gameplay {
+    position: absolute;
+    left: -10px;
+    top: 522px;
+}
+
+.seccion-2 {
+    width: 100%;
+    height: 1085px;
+    position: absolute;
+    top: 1472px;
+    background: #FFFFFF;
+}
+
+.container-seccion-2 {
+    width: 1080px;
+    height: 1085px;
+    position: relative;
+    margin: auto;
+}
+
+.personajes-descripcion {
+    display: flex;
+    gap: 41px;
+    position: absolute;
+    top: 368px;
+}
+
+.personajes-descripcion-1, .personajes-descripcion-2, .personajes-descripcion-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.personajes-descripcion-1 p {
+    width: 333px;
+    height: 218px;
+    font-size: 20px;
+    line-height: auto;
+}
+
+.personajes-descripcion-2 p {
+    width: 332px;
+    height: 217px;
+    font-size: 20px;
+    line-height: auto;
+}
+
+.personajes-descripcion-3 p {
+    width: 333px;
+    height: 189px;
+    font-size: 20px;
+    line-height: auto;
+}
+
+.seccion-3 {
+    width: 100%;
+    height: 566px;
+    position: absolute;
+    top: 2497px;
+}
+
+.seccion-3 .seccion-3-background {
+    width: 100%;
+    height: 100%;
+}
+
+.container-seccion-3 {
+    width: 1080px;
+    height: 566px;
+    top: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.container-seccion-3 .test1 {
+    position: absolute;
+    left: -49px;
+    top: -157px;
+}
+
+.container-seccion-3 .test2 {
+    position: absolute;
+    left: -65px;
+    top: -20px;
+}
+
+.container-seccion-3 .test3 {
+    position: absolute;
+    left: -34px;
+    top: 169px;
+}
+
+.container-seccion-7 {
+    width: 1080px;
+    position: absolute;
+    top: 3226px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 3;
+}
+
+.container-seccion-7 h1 {
+    font-size: 60px;
+    line-height: 94.5%;
+    width: 667px;
+    height: 171px;
+    position: absolute;
+    left: 4px;
+    color: #FFFFFF;
+}
+
+.container-seccion-7-animacion {
+    width: 1077.06px;
+    height: 527.63px;
+    position: absolute;
+    left: 2px;
+    top: 226.11px;
+    box-shadow: 26px 29px 41px 14px rgba(0, 0, 0, 15%);
+}
+
+.container-seccion-7-animacion img {
+    width: 100%;
+    height: 100%;
+}
+
+.seccion-4 {
+    width: 100%;
+    height: 2194.5px;
+    position: absolute;
+    top: 3832.5px;
+}
+
+.seccion-4 .seccion-4-background {
+    width: 100%;
+    height: 100%;
+}
+
+.seccion-5 {
+    width: 100%;
+    height: 719.86px;
+    position: absolute;
+    top: 6275px;
+}
+
+.seccion-5 .seccion-5-background {
+    width: 100%;
+    height: 100%;
+}
+
+.seccion-6 {
+    width: 100%;
+    height: 1296px;
+    background: linear-gradient(to bottom, #8FBEFC, #F7E3D8);
+    position: absolute;
+    top: 6994px;
+}
+
+.container-seccion-6 {
+    width: 1080px;
+    height: 1296px;
+    margin: auto;
+    position: relative;
+}
+
+.container-seccion-6 h1 {
+    font-size: 60px;
+    line-height: 94.5%;
+    width: 816px;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    top: 151px;
+    left: 132px;
+}
+
+.container-seccion-6 .input-suscribirse {
+    display: flex;
+    width: 780px;
+    height: 100px;
+    border-radius: 50px;
+    box-shadow: 4px 5px #02187E;
+    position: absolute;
+    top: 369px;
+    left: 150px;
+}
+
+.input-suscribirse input {
+    border-right: 0;
+    border-top: 9px solid #2982FF;
+    border-left: 9px solid #2982FF;
+    border-bottom: 9px solid #2982FF;
+    border-radius: 50px 0 0 50px;
+    width: 512px;
+    padding-left: 41px;
+    padding-top: 41px;
+    padding-bottom: 41px;
+    padding-right: 0;
+}
+
+.input-suscribirse input::placeholder {
+    font-size: 20px;
+    letter-spacing: 11%;
+    line-height: 94.5%;
+    color: rgba(0, 0, 0, 0.39);
+}
+
+.input-suscribirse input:focus {
+    outline: 0;
+}
+
+.input-suscribirse .btn-suscribirse {
+    border: 9px solid #2982FF;
+    width: 200px;
+    height: 82px;
+    border-radius: 0 50px 50px 0;
+    background: #FFE901;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-suscribirse p {
+    color: #02187E;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 94.5%;
+    letter-spacing: 11%;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #02187E;
+}
+
+.container-seccion-6 .terminos {
+    width: 578px;
+    height: 95px;
+    font-size: 20px;
+    line-height: 94.5%;
+    position: absolute;
+    left: 202px;
+    top: 508px;
+}
+
+.terminos span {
+    text-decoration: underline;
+}
+
+.container-seccion-6 img {
+    position: absolute;
+    left: 202px;
+    top: 620px;
+}
+
+.seccion-6 .seccion-6-background {
+    position: absolute;
+    top: 576px;
+    width: 100%;
+    height: 720px;
+}
+
+/*FOOOTER*/
+footer {
+    width: 100%;
+    height: 678px;
+    position: absolute;
+    top: 8290px;
+}
+
+footer .footer-top {
+    width: 100%;
+    height: 80px;
+    background: #242424;
+}
+
+.footer-top .container-footer-top {
+    width: 1080px;
+    margin: auto;
+    position: relative;
+}
+
+.container-footer-top img {
+    width: 100%;
+    height: 75px;
+    position: absolute;
+    top: 1px;
+}
+
+footer .footer-bottom {
+    width: 100%;
+    height: 598px;
+    background: #5E5E5D;
+}
+
+.container-footer-bottom {
+    width: 1080px;
+    margin: auto;
+    position: relative;
+}
+
+.container-footer-bottom p {
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 94.5%;
+    letter-spacing: 11%;
+    width: 820px;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    top: 38px;
+}
+
+.container-footer-bottom span {
+    text-decoration: underline;
+}
+
+.container-footer-bottom img {
+    position: absolute;
+    left: 0;
+    top: 376.75px;
+}
