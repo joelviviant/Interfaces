@@ -6,16 +6,19 @@
 body {
     background: #000000;
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }
 
 /*HEADER*/
-header {
+.header {
     width: 100%;
     height: 227px;
+    transition: height .3s;
     background: linear-gradient(to bottom, rgba(84, 153, 248, 1), rgba(84, 153, 248, 1), rgba(84, 153, 248, 1), rgba(84, 153, 248, 0));
 }
 
-header .container-header {
+.header .container-header {
+    height: 100%;
     width: 1080px;
     margin: auto;
     position: relative;
@@ -33,15 +36,29 @@ header .container-header {
 }
 
 .btn-menu div {
-    width: 34px;   
+    width: 34px;  
     padding: 2px;
     background: #FFE901;
     border: 4px solid #2981FF;
     border-radius: 111px;
     box-shadow: 4px 5px #02187E;
+    transform-origin: left;
+    transition: transform .3s, opacity .3s;
 }
 
-.container-header .btn-comprar {
+    .abrir-menu-top {
+        transform: rotate(45deg) translate(0, -12px);
+    }
+
+    .abrir-menu-medium {
+        opacity: 0;
+    }
+
+    .abrir-menu-bottom {
+        transform: rotate(-45deg) translate(2px, 6px);
+    }
+
+.btn-comprar {
     background: #FFE901;
     width: 200px;
     height: 50px;
@@ -55,6 +72,7 @@ header .container-header {
     top: 20px;
     right: 0;
     cursor: pointer;
+    transition: all .3s ease-in-out;
 }
 
 .btn-comprar p {
@@ -63,8 +81,22 @@ header .container-header {
     font-weight: bold;
     line-height: 94.5%;
     letter-spacing: 11%;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #02187E;
+}
+
+.btn-comprar:hover {
+    animation: hoverBtnComprar 1s ease-in-out;
+    background: #8E69A6;
+}
+
+@keyframes hoverBtnComprar {
+    17% {transform: translateY(8px);}
+    34% {transform: translateY(-6px);}
+    50% {transform: translateY(4px);}
+    67% {transform: translateY(-2px);}
+    84% {transform: translateY(1px);}
+    100% {transform: translateY(0);}
 }
 
 /*PORTADA*/
@@ -84,13 +116,13 @@ header .container-header {
     width: 1080px;
     margin: auto;
     position: relative;
-    background: red;
 }
 
 .container-portada .logo {
     position: absolute;
     left: 230px;
     top: -35px;
+    z-index: 3;
 }
 
 .portada .edificios-1 {
@@ -187,6 +219,7 @@ header .container-header {
     position: absolute;
     left: 612px;
     top: 132.5px;
+    transition: all 1s ease;
 }
 
 .container-seccion-1-gameplay {
@@ -222,6 +255,29 @@ header .container-header {
     flex-direction: column;
     gap: 23px;
 }
+
+.personajes-descripcion-1 {
+    transform: translate(0, 150px);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.personajes-descripcion-2 {
+    transform: translate(0, 150px);
+    opacity: 0;
+    transition: all .6s ease-in-out;
+}
+
+.personajes-descripcion-3 {
+    transform: translate(0, 150px);
+    opacity: 0;
+    transition: all .9s ease-in-out;
+}
+
+    .fade-in {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
 
 .personajes-descripcion-1 p {
     width: 333px;
@@ -328,6 +384,106 @@ header .container-header {
     height: 100%;
 }
 
+.container-seccion-4 {
+    width: 1080px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: 100%;
+}
+
+.container-seccion-4 h1 {
+    position: absolute;
+    top: 255.5px;
+    left: 4px;
+    width: 802px;
+    height: auto;
+    font-size: 60px;
+    line-height: 94.5%;
+}
+
+.seccion-4-col-img {
+    position: absolute;
+    width: 556px;
+    height: 100%;
+    left: 0;
+    top: 380.5px;
+}
+
+.seccion-4-col-img img {
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+#s4-img {
+    width: 552px;
+    height: 302.76px;
+    margin-left: 4px;
+    position: sticky;
+    top: 100px;
+}
+
+.seccion-4-col-txt {
+    position: absolute;
+    width: 467px;
+    height: 100%;
+    right: 0;
+    top: 380.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.seccion-4-col-txt div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.seccion-4-col-txt h2 {
+    width: 467px;
+    height: auto;
+    font-size: 40px;
+    line-height: 94.5%;
+}
+
+.seccion-4-col-txt p {
+    width: 467px;
+    height: auto;
+    font-size: 20px;
+    line-height: 94.5%;
+    font-weight: normal;
+}
+
+.container-seccion-8 {
+    width: 1080px;
+    position: absolute;
+    top: 5931px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 3;
+}
+
+.container-seccion-8 h1 {
+    position: absolute;
+    top: 121px;
+    left: 4px;
+    color: #FFFFFF;
+    width: 816px;
+    height: auto;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.container-seccion-8 .btn-comprar {
+    top: 307px;
+    left: 10px;
+    width: 292px;
+}
+
 .seccion-5 {
     width: 100%;
     height: 719.86px;
@@ -411,6 +567,11 @@ header .container-header {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.btn-suscribirse:hover {
+    background: #8E69A6;
 }
 
 .btn-suscribirse p {
@@ -419,7 +580,7 @@ header .container-header {
     font-weight: bold;
     line-height: 94.5%;
     letter-spacing: 11%;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #02187E;
 }
 
