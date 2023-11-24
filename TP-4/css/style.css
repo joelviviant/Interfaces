@@ -17,6 +17,20 @@ body {
     background: linear-gradient(to bottom, rgba(84, 153, 248, 1), rgba(84, 153, 248, 1), rgba(84, 153, 248, 1), rgba(84, 153, 248, 0));
 }
 
+.logo-header {
+    position: absolute;
+    top: 18px;
+    left: 474px;
+    opacity: 0;
+}
+
+    .achicar {
+        position: fixed;
+        height: 103px;
+        background: rgba(84, 153, 248, 1);
+        z-index: 5;
+    }
+
 .header .container-header {
     height: 100%;
     width: 1080px;
@@ -321,19 +335,35 @@ body {
     transform: translate(-50%);
 }
 
-.container-seccion-3 .test1 {
+.s3-cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1.2s ease-in-out;
+    perspective: 1000px;
+}
+
+.s3-cards img {
+    transition: transform .3s ease-in;
+}
+
+.s3-cards img:hover {
+    transform: rotate(15deg);
+}
+
+.test1 {
     position: absolute;
     left: -49px;
     top: -157px;
 }
 
-.container-seccion-3 .test2 {
+.test2 {
     position: absolute;
     left: -65px;
     top: -20px;
 }
 
-.container-seccion-3 .test3 {
+.test3 {
     position: absolute;
     left: -34px;
     top: 169px;
@@ -421,7 +451,7 @@ body {
     height: 302.76px;
     margin-left: 4px;
     position: sticky;
-    top: 100px;
+    top: 150px;
 }
 
 .seccion-4-col-txt {

@@ -14,6 +14,19 @@ document.addEventListener("scroll", () => {
     let posScroll = window.scrollY;
 
     let logo = document.querySelector('.logo');
+    let logoHeader = document.querySelector('.logo-header');
+
+    let header = document.querySelector('.header');
+
+    if(posScroll > 130) {
+        header.classList.add('achicar');
+        logoHeader.style.opacity = 1;
+        logo.style.opacity = 0;
+    } else {
+        header.classList.remove('achicar');
+        logoHeader.style.opacity = 0;
+        logo.style.opacity = 1;
+    }
 
     logo.style.scale = 1 - posScroll / 300;
 }) 
@@ -63,6 +76,15 @@ document.addEventListener("scroll", () => {
     }
 })
 
+//SECCION 3
+document.addEventListener("scroll", () => {
+    let posScroll = window.scrollY;
+
+    let s3Cards = document.querySelector('.s3-cards');
+
+    s3Cards.style.transform = "translateY("+posScroll*0.02+"px)";
+})
+
 //SECCION 4
 document.addEventListener("scroll", () => {
     let posScroll = window.scrollY;
@@ -101,14 +123,14 @@ document.addEventListener("scroll", () => {
 
         imagen.src = img2;
         txt2.style.opacity = 1;
-    } else if(posScroll > 4690 && posScroll < 5240) {
+    } else if(posScroll > 4690 && posScroll < 5140) {
         txt2.style.opacity = 0;
         txt4.style.opacity = 0;
         txt1.style.opacity = 0;
 
         imagen.src = img3;
         txt3.style.opacity = 1;
-    } else if(posScroll > 5240) {
+    } else if(posScroll > 5140) {
         txt3.style.opacity = 0;
         txt1.style.opacity = 0;
         txt2.style.opacity = 0;
@@ -119,10 +141,10 @@ document.addEventListener("scroll", () => {
 
     //Aca verifico que cuando este dentro del rango de la seccion la imagen sea sticky
     //si se pasa, que sea absoluta asi no sigue bajando al resto de la pagina.
-    if(posScroll > 3300 && posScroll < 5440) {
+    if(posScroll > 3300 && posScroll < 5400) {
         imagen.style.position = "sticky";
-        imagen.style.top = "100px";
-    } else if(posScroll > 5440) {
+        imagen.style.top = "150px";
+    } else if(posScroll > 5400) {
         imagen.style.position = "absolute";
         imagen.style.top = "1342px";
         imagen.style.opacity = 1;
