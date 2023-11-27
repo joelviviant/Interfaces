@@ -632,12 +632,18 @@ body {
     transform: translate(-50%);
 }
 
+.s5-pj-fondo {
+    position: absolute;
+    top: -60px;
+    left: -149px;
+    width: 1564px;
+    height: 1039px;
+}
 .s5-pj-left {
     position: absolute;
     top: 171px;
     left: 90px;
 }
-
 .s5-pj-mid {
     position: absolute;
     top: 180px;
