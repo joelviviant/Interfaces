@@ -41,10 +41,19 @@ document.addEventListener("scroll", () => {
     let edi1 = document.querySelector('.edificios-1');
     let edi2 = document.querySelector('.edificios-2');
     let edi3 = document.querySelector('.edificios-3');
+    let tel1 = document.querySelector('.telaraña-left');
+    let tel2 = document.querySelector('.telaraña-right');
+
+    //Cuando se scrollea los superherores y las telarañas se van para arriba
+    //mientras que los edificios de los laterales se van para afuera
+    //y el edificio del medio se va hacia abajo.
 
     pj1.style.transform = "translateY("+ -posScroll * 0.3 +"px)";
     pj2.style.transform = "translateY("+ -posScroll * 0.3 +"px)";
     pj3.style.transform = "translateY("+ -posScroll * 0.3 +"px)";
+
+    tel1.style.transform = "translateY("+ -posScroll * 0.3 +"px)";
+    tel2.style.transform = "translateY("+ -posScroll * 0.3 +"px)";
 
     edi1.style.marginLeft = ""+ -posScroll*0.1 +"px";
     edi2.style.marginTop = ""+ posScroll*0.1 +"px";
@@ -60,6 +69,8 @@ window.onload = function() {
     let edi2 = document.querySelector('.edificios-2');
     let edi3 = document.querySelector('.edificios-3');
     let logo = document.querySelector('.logo');
+    let tel1 = document.querySelector('.telaraña-left');
+    let tel2 = document.querySelector('.telaraña-right');
     
     logo.classList.add('logo-aparecer');
     edi1.classList.add('edificios-1-aparecer');
@@ -68,6 +79,8 @@ window.onload = function() {
     pj1.classList.add('personaje-1-aparecer');
     pj2.classList.add('personaje-2-aparecer');
     pj3.classList.add('personaje-3-aparecer');
+    tel1.classList.add('telaraña-left-aparecer');
+    tel2.classList.add('telaraña-right-aparecer');
 }
 
 //SECCION 1
