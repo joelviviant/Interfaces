@@ -182,3 +182,35 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "home.html";
     }
 });
+var heroeMid = document.getElementById("heroe-mid");
+var heroeLeft = document.getElementById("heroe-left");
+var heroeRight = document.getElementById("heroe-right");
+var fondoMid = document.getElementById("heroe-mid-fondo");
+var fondoRight = document.getElementById("heroe-right-fondo");
+var fondoLeft = document.getElementById("heroe-left-fondo");
+
+heroeMid.addEventListener("click", CambiarFondoMid);
+heroeRight.addEventListener("click", CambiarFondoRight);
+heroeLeft.addEventListener("click", CambiarFondoLeft);
+
+function CambiarFondoMid(){
+        fondoLeft.classList.add("s5-pj-fondo-left-ocultar");
+        fondoRight.classList.add("s5-pj-fondo-right")
+        fondoMid.classList.remove("s5-pj-fondo-mid");
+        fondoMid.classList.add("s5-pj-fondo-mid-show");        
+}
+
+function CambiarFondoRight(){
+    fondoLeft.classList.add("s5-pj-fondo-left-ocultar");
+    fondoMid.classList.add("s5-pj-fondo-mid")
+    fondoRight.classList.remove("s5-pj-fondo-right");
+    fondoRight.classList.add("s5-pj-fondo-right-show");       
+}
+
+function CambiarFondoLeft(){
+    fondoMid.classList.add("s5-pj-fondo-mid")
+    fondoRight.classList.add("s5-pj-fondo-right")
+    fondoLeft.classList.remove("s5-pj-fondo-left-ocultar");
+    fondoLeft.classList.add("s5-pj-fondo-left")
+}
+
