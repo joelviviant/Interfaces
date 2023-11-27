@@ -8,42 +8,7 @@ body {
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
 }
-.preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white; /* Fondo blanco del preloader */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999; /* Asegura que el preloader esté sobre todo el contenido */
-}
 
-.loader-container {
-    text-align: center;
-}
-
-.loader-background {
-    width: 200px; /* Ajusta el ancho de la barra de carga según tus necesidades */
-    height: 20px; /* Ajusta la altura de la barra de carga según tus necesidades */
-    background-color: red; /* Fondo rojo de la barra de carga */
-    border-radius: 10px; /* Bordes redondeados de la barra de carga */
-    overflow: hidden;
-}
-
-.loader-bar {
-    width: 0; /* Inicialmente, la barra de carga está vacía */
-    height: 100%;
-    background-color: blue; /* Relleno azul de la barra de carga */
-    border-radius: 10px; /* Bordes redondeados de la barra de carga */
-    transition: width 0.5s ease; /* Agrega una transición suave a la animación */
-}
-
-.loader-text {
-    margin-top: 10px;
-}
 /*HEADER*/
 .header {
     width: 100%;
@@ -170,54 +135,120 @@ body {
 .container-portada .logo {
     position: absolute;
     left: 230px;
-    top: -35px;
+    top: -435px;
     z-index: 3;
 }
+
+    .logo-aparecer {
+        animation: logoAparecer .5s ease-in-out forwards;
+    }
+
+    @keyframes logoAparecer {
+        0%{transform: translateY(0);}
+        100%{transform: translateY(400px);}
+    }
 
 .portada .edificios-1 {
     position: absolute;
     width: 35.31%;
     height: 100%;
-    left: -3.67%;
+    left: -747px;
     top: 2.5%;
 }
+
+    .edificios-1-aparecer {
+        animation: edificios1Aparecer .3s ease-in-out forwards;
+    }
+
+    @keyframes edificios1Aparecer {
+        0%{transform: translateX(0);}
+        100%{transform: translateX(700px);}
+    }
 
 .portada .edificios-2 {
     position: absolute;
     width: 42.46%;
     height: 29.65%;
     left: 30.62%;
-    top: 70.55%;
+    top: 808px;
 }
+
+    .edificios-2-aparecer {
+        animation: edificios2Aparecer .3s ease-in-out forwards;
+    }
+
+    @keyframes edificios2Aparecer {
+        0%{transform: translateY(0);}
+        100%{transform: translateY(-300px);}
+    }
 
 .portada .edificios-3 {
     position: absolute;
     width: 29.21%;
     height: 101.04%;
-    left: 70.78%;
+    right: -600px;
     top: 0;
 }
+
+    .edificios-3-aparecer {
+        animation: edificios3Aparecer .3s ease-in-out forwards;
+    }
+
+    @keyframes edificios3Aparecer {
+        0%{transform: translateX(0);}
+        100%{transform: translateX(-600px);}
+    }
 
 .container-portada .personaje-1 {
     position: absolute;
     left: -10px;
     top: 262px;
     z-index: 2;
+    margin-left: -1000px;
 }
+
+    .personaje-1-aparecer {
+        animation: personaje1Aparecer .5s ease-in-out forwards;
+    }
+
+    @keyframes personaje1Aparecer {
+        0%{margin-left: -1000px;}
+        100%{margin-left: 0;}
+    }
 
 .container-portada .personaje-2 {
     position: absolute;
     left: 293px;
     top: 294px;
     z-index: 2;
+    margin-top: 1000px;
 }
+
+    .personaje-2-aparecer {
+        animation: personaje2Aparecer .5s ease-in-out forwards;
+    }
+
+    @keyframes personaje2Aparecer {
+        0%{margin-top: 1000px;}
+        100%{margin-top: 0;}
+    }
 
 .container-portada .personaje-3 {
     position: absolute;
     left: 595px;
     top: 209px;
     z-index: 2;
+    margin-left: 1000px;
 }
+
+    .personaje-3-aparecer {
+        animation: personaje3Aparecer .5s ease-in-out forwards;
+    }
+
+    @keyframes personaje3Aparecer {
+        0%{margin-left: 1000px;}
+        100%{margin-left: 0;}
+    }
 
 /*CONTENIDO*/
 .seccion-1 {
@@ -432,9 +463,41 @@ body {
     box-shadow: 26px 29px 41px 14px rgba(0, 0, 0, 15%);
 }
 
-.container-seccion-7-animacion img {
+.container-seccion-7-animacion .s7-background {
+    position: absolute;
     width: 100%;
     height: 100%;
+}
+
+.s7-capa-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.s7-capa-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.s7-pj-left {
+    position: absolute;
+    left: 26px;
+    top: -95px;
+}
+
+.s7-pj-mid {
+    position: absolute;
+    left: 450px;
+    top: -255px;
+}
+
+.s7-pj-right {
+    position: absolute;
+    left: 670px;
+    top: 106px;
 }
 
 .seccion-4 {
@@ -561,6 +624,32 @@ body {
     height: 100%;
 }
 
+.container-seccion-5 {
+    width: 1080px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.s5-pj-left {
+    position: absolute;
+    top: 171px;
+    left: 90px;
+}
+
+.s5-pj-mid {
+    position: absolute;
+    top: 180px;
+    left: 294px;
+}
+
+.s5-pj-right {
+    position: absolute;
+    top: 180px;
+    left: 677px;
+}
+
 .seccion-6 {
     width: 100%;
     height: 1296px;
@@ -568,6 +657,23 @@ body {
     position: absolute;
     top: 6994px;
 }
+
+.sprite {
+    width: 128px;
+    height: 120px;
+    background: url(../images/sprite.png) no-repeat;
+    position: absolute;
+    z-index: 3;
+    left: 43%;
+    bottom: 160px;
+    animation: caminar 1s steps(6) infinite;
+    z-index: 3;
+}
+
+@keyframes caminar {
+    to{background-position: -777px;}
+}
+
 
 .container-seccion-6 {
     width: 1080px;

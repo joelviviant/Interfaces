@@ -46,10 +46,29 @@ document.addEventListener("scroll", () => {
     pj2.style.transform = "translateY("+ -posScroll * 0.3 +"px)";
     pj3.style.transform = "translateY("+ -posScroll * 0.3 +"px)";
 
-    edi1.style.transform = "translateX("+ -posScroll * 0.1+"px) translateY("+ posScroll * 0.1 +"px)";
-    edi2.style.transform = "translateY("+ posScroll * 0.1+"px)";
-    edi3.style.transform = "translateX("+ posScroll * 0.1+"px) translateY("+ posScroll * 0.1 +"px)";
+    edi1.style.marginLeft = ""+ -posScroll*0.1 +"px";
+    edi2.style.marginTop = ""+ posScroll*0.1 +"px";
+    edi3.style.marginRight = ""+ -posScroll*0.1 +"px";
 })
+
+//Entrada de elementos a pantalla
+window.onload = function() {
+    let pj1 = document.querySelector('.personaje-1');
+    let pj2 = document.querySelector('.personaje-2');
+    let pj3 = document.querySelector('.personaje-3');
+    let edi1 = document.querySelector('.edificios-1');
+    let edi2 = document.querySelector('.edificios-2');
+    let edi3 = document.querySelector('.edificios-3');
+    let logo = document.querySelector('.logo');
+    
+    logo.classList.add('logo-aparecer');
+    edi1.classList.add('edificios-1-aparecer');
+    edi2.classList.add('edificios-2-aparecer');
+    edi3.classList.add('edificios-3-aparecer');
+    pj1.classList.add('personaje-1-aparecer');
+    pj2.classList.add('personaje-2-aparecer');
+    pj3.classList.add('personaje-3-aparecer');
+}
 
 //SECCION 1
 document.addEventListener("scroll", () => {
@@ -149,27 +168,17 @@ document.addEventListener("scroll", () => {
         imagen.style.top = "1342px";
         imagen.style.opacity = 1;
     }
-
-    console.log(posScroll);
 })
-
 document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(function () {
-       
-        document.querySelector(".preloader").style.display = "none";
-    }, 4000); 
+    // Verifica si el preloader ya se ha mostrado
+    const preloaderShown = localStorage.getItem('preloaderShown');
 
-    let progressBar = document.querySelector(".loader-bar");
-    let progressText = document.querySelector(".loader-text");
+    // Si no se ha mostrado, redirige a preloader.html
+    if (!preloaderShown) {
+        // Marca el preloader como mostrado
+        localStorage.setItem('preloaderShown', 'true');
 
-    let interval = setInterval(function () {
-        if (progressBar.style.width === "100%") {
-            clearInterval(interval);
-        } else {
-            let currentWidth = parseFloat(progressBar.style.width) || 0;
-            let newWidth = Math.min(currentWidth + 10, 100);
-            progressBar.style.width = newWidth + "%";
-            progressText.textContent = "Cargando... " + Math.round(newWidth) + "%";
-        }
-    }, 200);
+        // Redirige a preloader.html
+        window.location.href = "home.html";
+    }
 });
