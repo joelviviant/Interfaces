@@ -182,19 +182,7 @@ document.addEventListener("scroll", () => {
         imagen.style.opacity = 1;
     }
 })
-document.addEventListener("DOMContentLoaded", function () {
-    // Verifica si el preloader ya se ha mostrado
-    const preloaderShown = localStorage.getItem('preloaderShown');
 
-    // Si no se ha mostrado, redirige a preloader.html
-    if (!preloaderShown) {
-        // Marca el preloader como mostrado
-        localStorage.setItem('preloaderShown', 'true');
-
-        // Redirige a preloader.html
-        window.location.href = "home.html";
-    }
-});
 var heroeMid = document.getElementById("heroe-mid");
 var heroeLeft = document.getElementById("heroe-left");
 var heroeRight = document.getElementById("heroe-right");
