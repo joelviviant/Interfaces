@@ -80,6 +80,13 @@ restartButton.addEventListener('click', () => {
 function jugar(modoJuego) {
     let jugador1 = document.querySelectorAll('.nombre1')[0].value;
     let jugador2 = document.querySelectorAll('.nombre2')[0].value; 
+    if (jugador1.trim() === '') {
+        jugador1 = 'Jugador 1';
+    }
+    if (jugador2.trim() === '') {
+        jugador2 = 'Jugador 2';
+    }
+    
     if(fichaj1 != null && fichaj2 != null) {
         jugador1 = new Jugador(jugador1, fichaj1);
         jugador2 = new Jugador(jugador2, fichaj2);
