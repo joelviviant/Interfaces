@@ -93,7 +93,7 @@ class Juego {
             elementoGanador.textContent = "El ganador es " + ganador.nombre;
             const mostrarGanador = document.querySelector('.mostrar-ganador');
             mostrarGanador.classList.toggle('ganador');
-        }, 500);
+        }, 2500);
     }
 
     inicializarJuego() {   
