@@ -151,9 +151,11 @@ body {
     color: #FF4593;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .container-principal{
         gap: 2em;
+        text-align: center;
+        width: 500px;
     }
     .container-carrousel {
         margin-left: 70px; 
@@ -162,6 +164,10 @@ body {
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
       
+    }
+    .container-principal  h3{
+        color: #ADFF45;
+        margin-left: 0px;
     }
 
     .container-carrousel::-webkit-scrollbar {
