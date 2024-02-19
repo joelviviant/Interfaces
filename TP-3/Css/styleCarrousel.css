@@ -12,8 +12,12 @@ body {
 .container-principal {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 5em;
+    gap: 3em;
+    margin-top: 100px;
+}
+.container-principal  h3{
+    margin-left: 100px;
+    color: #ADFF45;
 }
 
 .container {
@@ -28,15 +32,28 @@ body {
     width: 100px;
     cursor: pointer;
     color: #FF4593;
+    transition: transform 0.5s;
 }
-
 .btn-izq {
     height: 100px;
     width: 100px;
     cursor: pointer;
     color: #FF4593;
     transform: rotate(180deg);
+    transition: transform 0.5s;  
 }
+.btn-der:hover {
+    color: #FF9900;
+    transform: scale(1.2); 
+}
+
+
+.btn-izq:hover {
+    color: #FF9900;                                                                
+    transform: rotate(180deg) scale(1.2); 
+}
+
+
 
 /*Carrousel*/
 .container-carrousel {
@@ -134,20 +151,40 @@ body {
     color: #FF4593;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
+    .container-principal{
+        gap: 2em;
+        text-align: center;
+        display: flex;
+        margin-left: 20px;
+        margin-right: 20px 
+    }
     .container-carrousel {
-        margin-left: 70px; ;
+        margin-left: 70px; 
+        margin-bottom: 50px;
         width: 200px;
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
+      
+    }
+    .container-principal  h3{
+        color: #ADFF45;
+        margin-left: 0px;
     }
 
     .container-carrousel::-webkit-scrollbar {
         display: none;
     }
 
+    .container{
+        width: 360px;
+    }
+
     .card {
         scroll-snap-align: center;
+    }
+    .card-nombre h3{
+        margin-left: 5px;
     }
 
     .btn-der {

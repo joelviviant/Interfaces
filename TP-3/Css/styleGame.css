@@ -431,7 +431,6 @@ nav{
 /*Comentarios*/
 
 .seccion-comentarios {
-  width: 1285px;
   height: 1267px;
   display: flex;
   flex-direction: column;
@@ -439,9 +438,9 @@ nav{
 }
 
 .comentario {
-  width: 1225px;
+  width: 1200px;
   height: 220px;
-  margin-left: 3em;
+  margin-left: 20px;
 }
 
 .comentario .comentario-top {
