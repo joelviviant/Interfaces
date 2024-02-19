@@ -633,8 +633,10 @@ nav{
 
 .juego-btns-modojuego button:hover {
   background: #FF9900;
-  transform: scale(1.2);
+  transform: scale(1.3 );
+  
 }
+
 
 .juego-eleccion-fichas {
     display: flex;
