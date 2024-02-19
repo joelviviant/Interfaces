@@ -437,21 +437,13 @@ nav{
   
   .links a{
   text-decoration: none;
-  color: white; 
+  color: #ADFF45;
   font-weight: bold;
   }
-  .links select{
-  background-color: black;
-  border: 0px;
-  color: white;
-  }
-  
-  .links select:hover{
-  color: #ADFF45;
-  }
+
   
   .links a:hover {
-  color: #ADFF45;
+  color: #FF4593;
   }
   .buy-button {
   background-color: #ADFF45; 
