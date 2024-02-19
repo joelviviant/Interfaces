@@ -1,5 +1,5 @@
 class Tablero {
-    constructor(filas, columnas, tamanioCelda, color, context, canvasWidth, canvasHeight) {
+    constructor(filas, columnas, tamanioCelda, color, context, canvasWidth, canvasHeight, nombreJugador1, nombreJugador2) {
         this.filas = filas;
         this.columnas = columnas;
         this.tamanioCelda = tamanioCelda;
@@ -11,6 +11,8 @@ class Tablero {
         this.cambiarModoDeJuego();
         this.tablero = [];
         this.fichasGanadoras = []; // Almacena las posiciones de las fichas ganadoras
+        this.nombreJugador1 = nombreJugador1;
+        this.nombreJugador2 = nombreJugador2;
         for (let fila = 0; fila < this.filas; fila++) {
             this.tablero[fila] = [];
             for (let columna = 0; columna < this.columnas; columna++) {
@@ -18,7 +20,10 @@ class Tablero {
             }
         }
     }
-
+    setNombresJugadores(nombreJugador1, nombreJugador2) {
+        this.nombreJugador1 = nombreJugador1;
+        this.nombreJugador2 = nombreJugador2;
+    }
 
     draw() {
         let tableroWidth = this.columnas * this.tamanioCelda;

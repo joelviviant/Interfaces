@@ -78,14 +78,14 @@ restartButton.addEventListener('click', () => {
 });
 
 function jugar(modoJuego) {
-    let jugador1;
-    let jugador2;
+    let jugador1 = document.querySelectorAll('.nombre1')[0].value;
+    let jugador2 = document.querySelectorAll('.nombre2')[0].value; 
     if(fichaj1 != null && fichaj2 != null) {
-        jugador1 = new Jugador("Jugador1", fichaj1);
-        jugador2 = new Jugador("Jugador2", fichaj2);
+        jugador1 = new Jugador(jugador1, fichaj1);
+        jugador2 = new Jugador(jugador2, fichaj2);
     } else {
-        jugador1 = new Jugador("Jugador1", "/Images/fichas/caruso.jpg");
-        jugador2 = new Jugador("Jugador2", "/Images/fichas/garcia.png");
+        jugador1 = new Jugador(jugador1, "/Images/fichas/caruso.jpg");
+        jugador2 = new Jugador(jugador2, "/Images/fichas/garcia.png");
     }
 
     if(modoJuego == 4) {

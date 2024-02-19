@@ -227,6 +227,18 @@ nav{
 
 /*container del juego*/
 
+.nombresJugadores {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+
+.nombresJugadores label,
+.nombresJugadores input {
+  margin-right: 10px; 
+}
+
 .content {
   display: flex;
   flex-direction: column;
