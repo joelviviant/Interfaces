@@ -29,15 +29,28 @@ body {
     width: 100px;
     cursor: pointer;
     color: #FF4593;
+    transition: transform 0.5s;
 }
-
 .btn-izq {
     height: 100px;
     width: 100px;
     cursor: pointer;
     color: #FF4593;
     transform: rotate(180deg);
+    transition: transform 0.5s;  
 }
+.btn-der:hover {
+    color: #FF9900;
+    transform: scale(1.2); 
+}
+
+
+.btn-izq:hover {
+    color: #FF9900;                                                                
+    transform: rotate(180deg) scale(1.2); 
+}
+
+
 
 /*Carrousel*/
 .container-carrousel {
