@@ -12,9 +12,12 @@ body {
 .container-principal {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 5em;
+    gap: 3em;
     margin-top: 100px;
+}
+.container-principal  h3{
+    margin-left: 100px;
+    color: #ADFF45;
 }
 
 .container {
@@ -149,8 +152,12 @@ body {
 }
 
 @media screen and (max-width: 400px) {
+    .container-principal{
+        gap: 2em;
+    }
     .container-carrousel {
-        margin-left: 70px; ;
+        margin-left: 70px; 
+        margin-bottom: 50px;
         width: 200px;
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
@@ -161,8 +168,15 @@ body {
         display: none;
     }
 
+    .container{
+        width: 360px;
+    }
+
     .card {
         scroll-snap-align: center;
+    }
+    .card-nombre h3{
+        margin-left: 5px;
     }
 
     .btn-der {
