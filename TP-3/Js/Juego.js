@@ -17,11 +17,11 @@ class Juego {
     
     inicializarFichas() {
         for(let i = 0; i < 36; i++) {
-            let fichaJ1 = new Ficha(this.context, 50, 50, 35, this.jugadores[0].ficha, this.jugadores[0]);
+            let fichaJ1 = new Ficha(this.context, 75, 100, 35, this.jugadores[0].ficha, this.jugadores[0]);
             this.fichas.push(fichaJ1);
         }
         for(let i = 0; i < 36; i++) {
-            let fichaJ2 = new Ficha(this.context, 1000, 50, 35, this.jugadores[1].ficha, this.jugadores[1]);
+            let fichaJ2 = new Ficha(this.context, 1005, 100, 35, this.jugadores[1].ficha, this.jugadores[1]);
             this.fichas.push(fichaJ2);
         }
         this.drawFichas();
@@ -118,13 +118,22 @@ class Juego {
     }
 
     dibujarTemporizador() {
-        this.context.clearRect(this.tiempoX - 10, this.tiempoY - 30, 300, 60);
+        this.context.clearRect(0, 0, this.tiempoX + 100, this.tiempoY + 18); // Limpiar un área suficientemente grande para los mensajes
+    
         this.context.fillStyle = "white";
         this.context.font = "15px Arial";
         const tiempoFormateado = this.tiempoRestante < 10 ? `0${this.tiempoRestante}` : this.tiempoRestante;
-        this.context.fillText(`Tiempo restante: ${tiempoFormateado} segundos`, this.tiempoX, this.tiempoY);
-        this.context.fillText(`Turno del Jugador: ${this.jugadorActual.nombre}`, this.tiempoX, this.tiempoY + 20);
+        
+        // Dibujar el mensaje "Tiempo restante" a la izquierda del canvas
+        this.context.fillText(`Tiempo restante: ${tiempoFormateado} segundos`, 0, this.tiempoY);
+        
+        // Calcular la longitud del primer mensaje para alinear correctamente el segundo mensaje
+        const primerMensajeWidth = this.context.measureText(`Tiempo restante: ${tiempoFormateado} segundos`).width;
+        
+        // Dibujar el mensaje "Turno del Jugador" a la derecha del primer mensaje
+        this.context.fillText(`Turno del Jugador: ${this.jugadorActual.nombre}`, primerMensajeWidth + 10, this.tiempoY);
     }
+
     siguienteTurno() {
         if (this.jugadorActual == this.jugadores[0]) {
             this.jugadorActual = this.jugadores[1];
