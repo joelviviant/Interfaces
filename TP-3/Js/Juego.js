@@ -119,6 +119,7 @@ class Juego {
 
     dibujarTemporizador() {
         this.context.clearRect(0, 0, this.tiempoX + 100, this.tiempoY + 18);
+        this.context.fillStyle = "white";
         this.context.font = "15px Arial";
         const tiempoFormateado = this.tiempoRestante < 10 ? `0${this.tiempoRestante}` : this.tiempoRestante;
         this.context.fillText(`Tiempo restante: ${tiempoFormateado} segundos`, 0, this.tiempoY);
