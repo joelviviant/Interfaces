@@ -118,21 +118,15 @@ class Juego {
     }
 
     dibujarTemporizador() {
-        this.context.clearRect(0, 0, this.tiempoX + 100, this.tiempoY + 18); // Limpiar un área suficientemente grande para los mensajes
-    
-        this.context.fillStyle = "white";
+        this.context.clearRect(0, 0, this.tiempoX + 100, this.tiempoY + 18);
         this.context.font = "15px Arial";
         const tiempoFormateado = this.tiempoRestante < 10 ? `0${this.tiempoRestante}` : this.tiempoRestante;
-        
-        // Dibujar el mensaje "Tiempo restante" a la izquierda del canvas
         this.context.fillText(`Tiempo restante: ${tiempoFormateado} segundos`, 0, this.tiempoY);
-        
-        // Calcular la longitud del primer mensaje para alinear correctamente el segundo mensaje
         const primerMensajeWidth = this.context.measureText(`Tiempo restante: ${tiempoFormateado} segundos`).width;
-        
-        // Dibujar el mensaje "Turno del Jugador" a la derecha del primer mensaje
         this.context.fillText(`Turno del Jugador: ${this.jugadorActual.nombre}`, primerMensajeWidth + 10, this.tiempoY);
     }
+
+    
 
     siguienteTurno() {
         if (this.jugadorActual == this.jugadores[0]) {
