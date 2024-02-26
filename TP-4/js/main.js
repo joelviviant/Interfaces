@@ -62,16 +62,35 @@ document.addEventListener("scroll", () => {
     edi3.style.marginRight = ""+ -posScroll*0.1 +"px";
 })
 
-document.querySelector('.btn-menu').addEventListener('click', function() {
-    var menuItems = document.querySelectorAll('.optionsMenu a');
-    menuItems.forEach(function(item, index) {
-        setTimeout(function() {
-            item.classList.toggle('show');
-        }, index * 200); // Ajusta el tiempo de retraso según tus preferencias
-    });
-    document.querySelector('.optionsMenu').classList.toggle('show');
+
+
+// Selecciona las imágenes de los personajes
+const pjLeft = document.querySelector('.s7-pj-left');
+const pjMid = document.querySelector('.s7-pj-mid');
+const pjRight = document.querySelector('.s7-pj-right');
+
+// Calcula el desplazamiento máximo permitido para los personajes
+const maxOffset = 30; // Puedes ajustar este valor según tus preferencias
+
+// Agrega un evento de escucha al movimiento del mouse para cada imagen de personaje
+[pjLeft, pjMid, pjRight].forEach(function(img) {
+    img.addEventListener('mousemove', moveImage);
 });
 
+// Función para mover la imagen activa
+function moveImage(event) {
+    // Calcula la posición del ratón dentro de la imagen
+    const imgRect = this.getBoundingClientRect();
+    const mouseX = event.clientX - imgRect.left;
+    const mouseY = event.clientY - imgRect.top;
+
+    // Calcula el porcentaje de desplazamiento basado en la posición del ratón
+    const offsetX = (mouseX / imgRect.width - 0.5) * 2;
+    const offsetY = (mouseY / imgRect.height - 0.5) * 2;
+
+    // Aplica el desplazamiento solo a la imagen activa
+    this.style.transform = `translate(${maxOffset * offsetX}px, ${maxOffset * offsetY}px)`;
+}
 //Entrada de elementos a pantalla
 window.onload = function() {
     if (!localStorage.getItem("redirected")) {

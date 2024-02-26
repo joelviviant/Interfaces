@@ -110,7 +110,7 @@ body {
         opacity: 0;
         pointer-events: none;
     }
-
+  
     .optionsMenu a:hover {
         animation: hoverBtnComprar 1s ease-in-out;
         background: #FD7875;
@@ -563,7 +563,6 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 1;
 }
 
 .s7-pj-left {
