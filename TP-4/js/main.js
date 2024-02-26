@@ -62,6 +62,16 @@ document.addEventListener("scroll", () => {
     edi3.style.marginRight = ""+ -posScroll*0.1 +"px";
 })
 
+document.querySelector('.btn-menu').addEventListener('click', function() {
+    var menuItems = document.querySelectorAll('.optionsMenu a');
+    menuItems.forEach(function(item, index) {
+        setTimeout(function() {
+            item.classList.toggle('show');
+        }, index * 200); // Ajusta el tiempo de retraso según tus preferencias
+    });
+    document.querySelector('.optionsMenu').classList.toggle('show');
+});
+
 //Entrada de elementos a pantalla
 window.onload = function() {
     if (!localStorage.getItem("redirected")) {

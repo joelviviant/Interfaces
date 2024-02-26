@@ -72,6 +72,54 @@ body {
         transform: rotate(-45deg) translate(2px, 6px);
     }
 
+
+    .optionsMenu {
+        position: fixed;
+        left: -280px; /* Ocultar el menú fuera de la pantalla */
+        top: 100px; /* Ajustar la posición vertical */
+        width: 200px;
+        z-index: 999;
+        padding: 10px;
+        transition: left 0.3s ease; /* Transición suave */
+    }
+    
+    .optionsMenu.show {
+        left: 20px; /* Mostrar el menú */
+    }
+    
+    .optionsMenu a {
+        display: block;
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: #02187E;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 94.5%;
+        letter-spacing: 11%;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #02187E;
+        transition: opacity 0.3s ease;
+        background-color: yellow;
+        border-radius: 15px;
+        border: 8px solid #2982FF;
+        text-align: center;
+        width: 150px;
+        height: 15px;
+        padding: 8px;
+        box-shadow: 4px 5px #02187E;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .optionsMenu a:hover {
+        animation: hoverBtnComprar 1s ease-in-out;
+        background: #FD7875;
+    }
+    
+    .optionsMenu a.show{
+        opacity: 1;
+        pointer-events: auto;/* Mostrar los elementos cuando el menú está visible */
+    }
 .btn-comprar {
     background: #FFE901;
     width: 200px;
