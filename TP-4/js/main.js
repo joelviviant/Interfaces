@@ -230,22 +230,28 @@ var fondoMid = document.getElementById("heroe-mid-fondo");
 var fondoRight = document.getElementById("heroe-right-fondo");
 var fondoLeft = document.getElementById("heroe-left-fondo");
 
-heroeMid.addEventListener("click", CambiarFondoMid);
-heroeRight.addEventListener("click", CambiarFondoRight);
-heroeLeft.addEventListener("click", CambiarFondoLeft);
+heroeMid.addEventListener("mouseover", CambiarFondoMid);
+heroeRight.addEventListener("mouseover", CambiarFondoRight);
+heroeLeft.addEventListener("mouseover", CambiarFondoLeft);
 
 function CambiarFondoMid(){
         fondoLeft.classList.add("s5-pj-fondo-left-ocultar");
         fondoRight.classList.add("s5-pj-fondo-right")
         fondoMid.classList.remove("s5-pj-fondo-mid");
-        fondoMid.classList.add("s5-pj-fondo-mid-show");        
+        fondoMid.classList.add("s5-pj-fondo-mid-show");       
+        heroeMid.style.transform = "scale(1.2)";
+        heroeLeft.style.transform = "scale(0.5)";
+        heroeRight.style.transform = "scale(0.5)"; 
 }
 
 function CambiarFondoRight(){
     fondoLeft.classList.add("s5-pj-fondo-left-ocultar");
     fondoMid.classList.add("s5-pj-fondo-mid")
     fondoRight.classList.remove("s5-pj-fondo-right");
-    fondoRight.classList.add("s5-pj-fondo-right-show");       
+    fondoRight.classList.add("s5-pj-fondo-right-show"); 
+    heroeRight.style.transform = "scale(1.2)";
+    heroeLeft.style.transform = "scale(0.5)";
+    heroeMid.style.transform = "scale(0.5)";      
 }
 
 function CambiarFondoLeft(){
@@ -253,5 +259,7 @@ function CambiarFondoLeft(){
     fondoRight.classList.add("s5-pj-fondo-right")
     fondoLeft.classList.remove("s5-pj-fondo-left-ocultar");
     fondoLeft.classList.add("s5-pj-fondo-left")
+    heroeLeft.style.transform = "scale(1.2)";
+    heroeMid.style.transform = "scale(0.5)";
+    heroeRight.style.transform = "scale(0.5)";
 }
-
