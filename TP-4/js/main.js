@@ -9,6 +9,8 @@ btnMenu.addEventListener('click', () => {
     aux3.classList.toggle('abrir-menu-bottom');
 });
 
+
+
 //HEADER
 document.addEventListener("scroll", () => {
     let posScroll = window.scrollY;
@@ -62,6 +64,15 @@ document.addEventListener("scroll", () => {
 
 //Entrada de elementos a pantalla
 window.onload = function() {
+    if (!localStorage.getItem("redirected")) {
+        // Redirigir a home.html
+        window.location.href = "home.html";
+        // Marcar como redirigido
+        localStorage.setItem("redirected", "true");
+    } else {
+        // Limpiar el indicador de redirección
+        localStorage.removeItem("redirected");
+    }
     let pj1 = document.querySelector('.personaje-1');
     let pj2 = document.querySelector('.personaje-2');
     let pj3 = document.querySelector('.personaje-3');

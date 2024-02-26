@@ -16,5 +16,5 @@ document.addEventListener("DOMContentLoaded", function () {
             progressBar.style.width = newWidth + "%";
             progressText.textContent = "Cargando... " + Math.round(newWidth) + "%";
         }
-    }, 200);
+    }, 300);
 });
