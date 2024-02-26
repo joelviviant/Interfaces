@@ -223,6 +223,17 @@ document.addEventListener("scroll", () => {
     }
 })
 
+
+document.querySelector('.btn-menu').addEventListener('click', function() {
+    var menuItems = document.querySelectorAll('.optionsMenu a');
+    menuItems.forEach(function(item, index) {
+        setTimeout(function() {
+            item.classList.toggle('show');
+        }, index * 100); // Ajusta el tiempo de retraso según tus preferencias
+    });
+    document.querySelector('.optionsMenu').classList.toggle('show');
+});
+
 var heroeMid = document.getElementById("heroe-mid");
 var heroeLeft = document.getElementById("heroe-left");
 var heroeRight = document.getElementById("heroe-right");
