@@ -10,7 +10,7 @@ class Tablero {
         this.condVictoria = 0;
         this.cambiarModoDeJuego();
         this.tablero = [];
-        this.fichasGanadoras = []; // Almacena las posiciones de las fichas ganadoras
+        this.fichasGanadoras = []; 
         this.nombreJugador1 = nombreJugador1;
         this.nombreJugador2 = nombreJugador2;
         for (let fila = 0; fila < this.filas; fila++) {
@@ -169,7 +169,7 @@ class Tablero {
 
     marcarFichasGanadoras(fila, columna, jugadorActual) {
         this.fichasGanadoras = [];
-        // Comprobar horizontalmente
+        
         let count = 0;
         for (let c = 0; c < this.columnas; c++) {
             if (this.tablero[fila][c] === jugadorActual) {
@@ -185,7 +185,7 @@ class Tablero {
             }
         }
     
-        // Comprobar verticalmente
+        
         count = 0;
         for (let f = 0; f < this.filas; f++) {
             if (this.tablero[f][columna] === jugadorActual) {
