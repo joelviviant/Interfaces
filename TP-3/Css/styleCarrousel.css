@@ -102,15 +102,16 @@ body {
         opacity: .5;
     }
 
-.card-nombre h3 {
-    color: #FF9900;
-    text-align: center;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 100%;
-    padding: 1em;
-}
+    .card-nombre h3 {
+        color: #FF9900;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+        padding: 1em;
+        margin-left: 0px;
+    }
 
 .card .card-imagen {
     height: 100%;

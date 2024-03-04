@@ -110,6 +110,7 @@ body {
     white-space: nowrap;
     width: 100%;
     padding: 1em;
+    margin-left: 0px;
 }
 
 .card .card-imagen {
